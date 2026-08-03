@@ -5,6 +5,6 @@ Each lab was completed in FLAREVM for sandboxing and reduced risk to host machin
 
 # Table of Contents
 - [SOC Analyst Tier One](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/CyberDefenders%20labs/Network%20Forensics%20Path)
-- [Network Forensics](https://github.com/VincentLindsay/IT-and-Cybersecurity-Porfolio/tree/main/Security%20Analysis%20Portfolio/CyberDefenders-Labs/Network%20Forensics%20Path)
+- [Network Forensics](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/CyberDefenders%20labs/Network%20Forensics%20Path)
 
 
