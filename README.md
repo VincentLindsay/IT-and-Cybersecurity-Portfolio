@@ -7,13 +7,16 @@
 
 - IT projects
   - Ticketing System Lab using Active Directory
- 
+   - Remote Support Lab
+   - Tier1 HelpDesk Troubleshooting Lab
+   - Microsoft365 Administrator Lab
+   - ServiceDesk Simulation labs
 
 - Cybersecurity Projects
   - CyberDefenders Labs
   - Malware Analysis Project
   - Splunk Project
-  - SOC Project
+  - SOC homelab Project
 
 
 
