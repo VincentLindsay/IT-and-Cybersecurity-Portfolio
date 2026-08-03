@@ -8,7 +8,7 @@
     - Critical  
 
 # Table of Contents
-- Low Tickets(
+- [Low Tickets](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/ServiceDesk%20Simulation%20Labs/Low%20Priority%20Tickets)
 - Medium Tickets
 - High Tickets
 - Critical Tickets
