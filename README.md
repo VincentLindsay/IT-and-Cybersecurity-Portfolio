@@ -13,11 +13,11 @@
    - Microsoft365 Administrator Lab
    - ServiceDesk Simulation labs
 
-- Cybersecurity Projects
-  - CyberDefenders Labs
-  - Malware Analysis Project
-  - Splunk Project
-  - SOC homelab Project
+- Cybersecurity Projects and labs:
+  - [CyberDefenders Labs](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/CyberDefenders%20labs)
+  - [Malware Analysis Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Malware%20Analysis%20Projects)
+  - [Splunk Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Splunk%20lab)
+  - [SOC homelab Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/SOC%20homelab%20project)
 
 
 
