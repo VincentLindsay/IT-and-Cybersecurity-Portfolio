@@ -1,0 +1,35 @@
+# Initial data check
+index="mydifr-soc"
+
+# Checking for failed logons 
+index="mydfir-soc" source="security.csv" sourcetype="WinEvent:Security"  EventCode=4625 
+| stats  count by _time, user, src_ip
+| sort ,_time,-count
+
+# Checking for successful logons
+index="mydfir-soc" source="security.csv" sourcetype="WinEvent:Security"  EventCode=4624
+| stats  count by _time, user, src_ip
+| sort ,_time,-count
+
+# Checking how the Ryan.Adams Account was logged into
+index="mydfir-soc" source="security.csv" sourcetype="WinEvent:Security"  user="Ryan.Adams" Logon_Type=3 EventCode=4624 
+| stats count by ,_time, user, host,  src_ip
+
+
+# Query shows brand new connections opened once the attacker logged in
+index="mydfir-soc" sourcetype="WinEvent:Sysmon" source="sysmon.csv" EventCode=3
+| table _time, Image, dest_ip, dest_port
+| sort -_time
+
+# This query checks the Windows defender logs and verifies if any changes were made
+index="mydfir-soc"  source="defender.csv"   
+| table  _time, EventCode
+| sort +_time
+
+# Query shows the identification of python.exe
+index="mydfir-soc"  user="Ryan.Adams" app="C:\\Users\\Ryan.Adams\\Music\\python.exe"
+
+
+# Query shows the scheduled task for the python.exe execution
+index="mydfir-soc" source="powershell.csv" EventCode=4104 
+|stats count by ,_time, EventCode, TaskCategory, host
