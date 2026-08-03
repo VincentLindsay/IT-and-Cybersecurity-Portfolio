@@ -5,8 +5,15 @@
   -  *Some projects may contain a simulated attack to map out the MITRE ATT&CK framework to identify attacker TTPs.
 
 
+- IT projects
+  - Ticketing System Lab using Active Directory
+ 
 
-
+- Cybersecurity Projects
+  - CyberDefenders Labs
+  - Malware Analysis Project
+  - Splunk Project
+  - SOC Project
 
 
 
