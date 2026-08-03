@@ -7,6 +7,7 @@
 
 - IT projects
   - Ticketing System Lab using Active Directory
+    - Ticket Simulations: https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Ticketing%20System%20project%20with%20Active%20Directory/Ticket%20Simulations/README.md 
    - Remote Support Lab
    - Tier1 HelpDesk Troubleshooting Lab
    - Microsoft365 Administrator Lab
