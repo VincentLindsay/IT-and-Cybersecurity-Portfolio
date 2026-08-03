@@ -10,7 +10,7 @@
 # Table of Contents
 - [Low Priority Tickets](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/ServiceDesk%20Simulation%20Labs/Low%20Priority%20Tickets)
 - [Medium Priority Tickets](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/ServiceDesk%20Simulation%20Labs/Medium%20Priority%20Tickets)
-- [High Priority Tickets](
+- [High Priority Tickets](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/ServiceDesk%20Simulation%20Labs/High%20Priority%20Tickets)
 - Critical Tickets
 
 
