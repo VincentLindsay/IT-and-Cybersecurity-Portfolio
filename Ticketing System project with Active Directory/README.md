@@ -7,5 +7,5 @@ The lab will simulate realistic Helpdesk scenarios such as the creation of an ac
 - [Configuring Networking Settings](https://github.com/VincentLindsay/IT-and-Cybersecurity-Porfolio/tree/main/IT%20Portfolio/Active%20Directory%20User%20Management%20Project/Configuring%20the%20network%20settings)
 - [Configuring Active Directory and its Architecture](https://github.com/VincentLindsay/IT-and-Cybersecurity-Porfolio/tree/main/IT%20Portfolio/Active%20Directory%20User%20Management%20Project/Configuring%20Active%20Directory%20and%20its%20Architecture)
 - [Deploying osTicket](https://github.com/VincentLindsay/IT-and-Cybersecurity-Porfolio/tree/main/IT%20Portfolio/Active%20Directory%20User%20Management%20Project/Deploying%20osTicket)
-- [Configuring osTicket]
-- [Simulation of Tier 1 Help Desk Operations]
+- [Installing and Configuring osTicket](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Ticketing%20System%20project%20with%20Active%20Directory/Installing%20and%20Deploying%20osTicket)
+- [Simulation of Tier 1 Help Desk Operations](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Ticketing%20System%20project%20with%20Active%20Directory/Ticket%20Simulations/README.md)
