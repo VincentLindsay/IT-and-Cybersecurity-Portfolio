@@ -5,8 +5,8 @@
 
 
 # Table of contents
-- [Installing Splunk for the lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Porfolio/blob/main/Security%20Analysis%20Portfolio/SOC%20homelab%20project/Installing%20Splunk/Installing%20Splunk%20for%20the%20lab.md)
-- [Installing Splunk universal forwarders](https://github.com/VincentLindsay/IT-and-Cybersecurity-Porfolio/blob/main/Security%20Analysis%20Portfolio/SOC%20homelab%20project/Installing%20Splunk/Installing%20Splunk%20universal%20forwarders.md)
-- [Creating the indexes](https://github.com/VincentLindsay/IT-and-Cybersecurity-Porfolio/blob/main/Security%20Analysis%20Portfolio/SOC%20homelab%20project/Installing%20Splunk/Creating%20the%20indexes.md)
-- [Creating alerts for this lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Porfolio/blob/main/Security%20Analysis%20Portfolio/SOC%20homelab%20project/Installing%20Splunk/Creating%20Splunk%20alerts.md)
+- [Installing Splunk for the lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/SOC%20homelab%20project/Installing%20Splunk/Installing%20Splunk%20for%20the%20lab.md)
+- [Installing Splunk universal forwarders](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/SOC%20homelab%20project/Installing%20Splunk/Installing%20Splunk%20universal%20forwarders.md)
+- [Creating the indexes](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/SOC%20homelab%20project/Installing%20Splunk/Creating%20the%20indexes.md)
+- [Creating alerts for this lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/SOC%20homelab%20project/Installing%20Splunk/Creating%20Splunk%20alerts.md)
 
