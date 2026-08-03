@@ -4,7 +4,7 @@ This repository features several labs from CyberDefenders, with each categorized
 Each lab was completed in FLAREVM for sandboxing and reduced risk to host machine.
 
 # Table of Contents
-- [SOC Analyst Tier One](https://github.com/VincentLindsay/IT-and-Cybersecurity-Porfolio/tree/main/Security%20Analysis%20Portfolio/CyberDefenders-Labs/SOC%20Analyst%20Tier%20One%20Path)
+- [SOC Analyst Tier One](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/CyberDefenders%20labs/Network%20Forensics%20Path)
 - [Network Forensics](https://github.com/VincentLindsay/IT-and-Cybersecurity-Porfolio/tree/main/Security%20Analysis%20Portfolio/CyberDefenders-Labs/Network%20Forensics%20Path)
 
 
