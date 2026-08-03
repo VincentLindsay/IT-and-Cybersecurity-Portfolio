@@ -1,0 +1,43 @@
+# Searching for Kerberos TGT Requests
+index=wineventlog (EventCode=4768 OR EventCode=4769)
+| stats count by Account_Name, EventCode, _time
+| sort _time
+
+# Searching for Successful TGT granting.
+index="winevent" EventCode= 4769
+|table _time, Account_Name, Client_Address,  Service_Name,  Ticket_Options, Failure_Code
+|sort - _time
+
+# Searching for Kerberos preauthentication requests.
+index="winevent" EventCode = 4771
+
+# Password spray attempt
+index="winevent" EventCode=4625
+| stats count by _time, Source_Network_Address, Account_Name, Failure_Reason
+| sort + _time
+
+# Checking for Bob's Privilege level.
+index="winevent" EventCode=4672 Account_Name=Bob   TaskCategory="Special Logon" 
+| stats  count by  Account_Name, EventCode
+
+
+# Checking for remote SYSTEM logins
+index="winevent" EventCode=4624 Logon_Type=3 OR Logon_Type=5 Account_Name = SYSTEM
+|table _time, Account_Name, EventCode, Logon_Type, Source_Network_Address
+| sort - _time
+
+# Searches for service installation.
+index="winevent" EventCode=7045
+| stats count by _time, EventCode, Service_File_Name
+| sort by _time
+
+# New accounts created
+index="winevent" EventCode=4720 
+|table _time, Account_Name
+
+# Accounts given special priviledges
+index="winevent" EventCode=4728  Account_Name="CN=Bobby,CN=Users,DC=phoenix,DC=local" 
+| table  _time, Account_Name
+
+# Checking for cleared logs
+index="winevent" EventCode=1102
