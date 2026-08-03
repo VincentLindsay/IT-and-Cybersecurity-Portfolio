@@ -1,0 +1,14 @@
+$Departments = @(
+    "Human Resources",
+    "Finance",
+    "Information Technology",
+    "Sales",
+    "Marketing"
+)
+
+foreach ($Department in $Departments) {
+    New-ADOrganizationalUnit `
+        -Name $Department `
+        -Path "OU=Departments,OU=Corporate,DC=helpdesk,DC=local" `
+        -ProtectedFromAccidentalDeletion $true
+}

@@ -1,0 +1,16 @@
+$DepartmentGroups = @(
+    "HR_Users",
+    "Finance_Users",
+    "IT_Users",
+    "Sales_Users",
+    "Marketing_Users"
+)
+
+foreach ($Group in $DepartmentGroups) {
+    New-ADGroup `
+        -Name $Group `
+        -SamAccountName $Group `
+        -GroupCategory Security `
+        -GroupScope Global `
+        -Path "OU=Groups,OU=Corporate,DC=helpdesk,DC=local"
+}

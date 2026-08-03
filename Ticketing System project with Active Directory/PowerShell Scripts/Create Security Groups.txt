@@ -1,0 +1,15 @@
+$ResourceGroups = @(
+    "VPN_Users",
+    "Printer_Users",
+    "SharedDrive_RW",
+    "SharedDrive_RO"
+)
+
+foreach ($Group in $ResourceGroups) {
+    New-ADGroup `
+        -Name $Group `
+        -SamAccountName $Group `
+        -GroupCategory Security `
+        -GroupScope Global `
+        -Path "OU=Groups,OU=Corporate,DC=helpdesk,DC=local"
+}

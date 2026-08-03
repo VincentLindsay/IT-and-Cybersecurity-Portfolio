@@ -1,0 +1,16 @@
+$PrimaryOUs = @(
+    "Users",
+    "Computers",
+    "Servers",
+    "Departments",
+    "Groups",
+    "Service Accounts",
+    "Disabled Users"
+)
+
+foreach ($OU in $PrimaryOUs) {
+    New-ADOrganizationalUnit `
+        -Name $OU `
+        -Path "OU=Corporate,DC=helpdesk,DC=local" `
+        -ProtectedFromAccidentalDeletion $true
+}
