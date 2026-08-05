@@ -5,8 +5,7 @@
 
 - Tools used:
   - Wireshark
-  - NetworkMiner
-  - Brim 
+ 
 
 # Scenario:
 - During a recent security incident, an attacker successfully exploited a vulnerability in our web server, allowing them to upload webshells and gain full control over the system. The attacker utilized the compromised web server as a launch point for further malicious activities, including data manipulation. 
