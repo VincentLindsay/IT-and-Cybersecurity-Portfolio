@@ -13,7 +13,7 @@ This path features labs from the SOC Analyst Tier One path from CyberDefenders.
 - [AWS Raid Lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/SOC%20Analyst%20Tier%20One%20Path/AWSRaid%20Lab.md)
 - [JetBrains Lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/SOC%20Analyst%20Tier%20One%20Path/JetBrains%20Lab.md)
 - [GrabThePhisher Lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/SOC%20Analyst%20Tier%20One%20Path/GrabThePhisher%20Lab.md)
-
+- [IcedID lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/SOC%20Analyst%20Tier%20One%20Path/IcedID%20lab.md)
 
 
 
