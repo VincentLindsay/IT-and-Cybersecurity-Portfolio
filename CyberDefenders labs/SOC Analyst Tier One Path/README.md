@@ -16,7 +16,7 @@ This path features labs from the SOC Analyst Tier One path from CyberDefenders.
 - [IcedID lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/SOC%20Analyst%20Tier%20One%20Path/IcedID%20lab.md)
 - [The Crime Lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/SOC%20Analyst%20Tier%20One%20Path/The%20Crime%20Lab.md)
 - [Ramnit Lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/SOC%20Analyst%20Tier%20One%20Path/Ramnit%20Lab.md)
-
+- [XXE Infiltration Lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/SOC%20Analyst%20Tier%20One%20Path/XXE%20Infiltration%20Lab.md)
 
 
 
