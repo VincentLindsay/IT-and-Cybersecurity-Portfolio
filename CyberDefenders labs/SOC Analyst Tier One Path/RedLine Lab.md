@@ -66,6 +66,8 @@ What is the name of the suspicious process?
 
 # Question 6 
 **What is the full URL of the PHP file that the attacker visited?**
+- By using **strings**, and using grep on IP address, I found the full URL.
+<img width="647" height="368" alt="image" src="https://github.com/user-attachments/assets/9b4ab8d1-4175-458d-910c-009a50e14879" />
 
 
 # Question 7 
