@@ -46,14 +46,26 @@ You have been provided with a memory dump (memory.dmp) from the affected system.
 
 - We can see that the malware used **Add-MpPreference**, which adds a Windows Defender exception to the malware, which makes it harder to detect.
 
-# Question 
+# Question 5
 **Recognizing detection-evasive executables is crucial for monitoring their harmful and malicious system activities. Which two applications were excluded by the malware from the previously altered application's settings?**
 
+- In order to find the additional applications, I used the **cmdline** plugin, and filtering by grepping the **Add-MpPreference** command.
+<img width="1917" height="147" alt="image" src="https://github.com/user-attachments/assets/2df51c96-bc93-4d61-a90b-fd0d10b2cf53" />
 
+- We can see that the two additional executable that were added as an exception to Windows Defender.
 
+# Question 6 
+**What specific MITRE ATT&CK sub-technique ID describes an adversary configuring exempted folders or path exclusions to hide malicious payloads from security inspection?**
+ 
+- In the MITRE ATT&CK framework, I checked the Tactic of stealth, specifically **T1564** which pertains to the hiding of artifacts.
+  - Behavior-wise, we know that the attacker used commands to creation file exclusions.
+<img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/3a9ee0a8-1302-4045-be0c-8a1ccf358cfb" />
+ 
+# Question 7
+**Determining the user account offers valuable information about its privileges, whether it is domain-based or local, and its potential involvement in malicious activities. Which user account is linked to the malicious processes?**
 
-
-
+- By checking the **cmdline** plugin, we can see the full path of the file exclusions being added, along with the user account associated with the commands.
+<img width="1918" height="122" alt="image" src="https://github.com/user-attachments/assets/c412d0a6-d9d6-40a7-87ca-a168fd927011" />
 
 
 
