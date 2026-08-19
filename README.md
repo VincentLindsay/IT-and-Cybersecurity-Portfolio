@@ -11,16 +11,16 @@
    - Remote Support Lab
    - Tier1 HelpDesk Troubleshooting Lab
    - Microsoft365 Administrator Lab
-   - ServiceDesk Simulation labs
+   - ServiceDesk Simulation labs(https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/ServiceDesk%20Simulation%20Labs)
 
-- Cybersecurity Projects and labs:
-  - [CyberDefenders Labs](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/CyberDefenders%20labs)
+- Cybersecurity Projects:
   - [Malware Analysis Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Malware%20Analysis%20Projects)
   - [Splunk Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Splunk%20lab)
   - [SOC homelab Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/SOC%20homelab%20project)
 
-
-
+- Platform labs:
+  - [CyberDefenders Labs](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/CyberDefenders%20labs)
+  - [TryHackMe Challenges](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/TryHackMe%20Challenges)
 
 
 
