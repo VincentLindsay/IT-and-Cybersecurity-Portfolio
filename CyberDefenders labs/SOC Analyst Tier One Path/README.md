@@ -19,7 +19,7 @@ This path features labs from the SOC Analyst Tier One path from CyberDefenders.
 - [XXE Infiltration Lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/SOC%20Analyst%20Tier%20One%20Path/XXE%20Infiltration%20Lab.md)
 - [Reveal Lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/SOC%20Analyst%20Tier%20One%20Path/Reveal%20Lab.md)
 - [REvil - GOLD SOUTHFIELD Lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/SOC%20Analyst%20Tier%20One%20Path/REvil%20-%20GOLD%20SOUTHFIELD%20Lab.md)
-
+- [Azure Hunt Lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/SOC%20Analyst%20Tier%20One%20Path/AzureHunt%20Lab.md)
 
 
 
