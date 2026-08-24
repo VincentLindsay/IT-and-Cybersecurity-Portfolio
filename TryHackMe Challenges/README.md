@@ -5,6 +5,8 @@
 
 # Table of Contents
 - Blue Team Challenges
+  - [Easy Difficulty](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/TryHackMe%20Challenges/Blue%20Team%20Challenges/Easy%20Difficulty%20Challenges)
+  - [Medium Difficulty](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/TryHackMe%20Challenges/Blue%20Team%20Challenges/Medium%20Difficulty%20Challenges)
 - Red Team Challenges
 - Purple Team Challenges
 - AI-Based Challenges
