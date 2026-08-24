@@ -1,5 +1,7 @@
 # Overview
 This path features labs from the SOC Analyst Tier One path from CyberDefenders.
+<img width="1917" height="1002" alt="image" src="https://github.com/user-attachments/assets/8626595e-ff6b-4526-bc90-b85a43675a9b" />
+
 
 # Table of Contents
 # Level One
