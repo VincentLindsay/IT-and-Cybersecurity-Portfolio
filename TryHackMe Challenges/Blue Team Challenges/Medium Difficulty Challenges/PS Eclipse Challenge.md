@@ -1,5 +1,6 @@
 # Overview
 - lab link: https://tryhackme.com/room/posheclipse
+<img width="1902" height="282" alt="image" src="https://github.com/user-attachments/assets/8422e897-3a20-4780-ac84-674ea651ba46" />
 
 
 
