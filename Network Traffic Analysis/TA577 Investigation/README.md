@@ -12,7 +12,7 @@ Assume we have no access to their SIEM to query data.
 Only focus on this PCAP, no need to perform malware analysis.
 
 # Table of Contents
-- My report
+- [My report](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Network%20Traffic%20Analysis/TA577%20Investigation/VLindsay_TA577_Report.pdf)
 
 
 
