@@ -11,10 +11,12 @@
    - [ServiceDesk Simulation labs](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/ServiceDesk%20Simulation%20Labs)
 
 - Cybersecurity Projects:
-  - [Malware Analysis Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Malware%20Analysis%20Projects)
+  - [Malware Analysis Projects](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Malware%20Analysis%20Projects)
   - [Splunk Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Splunk%20lab)
   - [SOC homelab Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/SOC%20homelab%20project)
   - [Wazuh Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Wazuh%20Project)
+  - [Network Traffic Analysis](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Network%20Traffic%20Analysis)
+    - [TA577 (Pikabot) Investigation report:](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Network%20Traffic%20Analysis/TA577%20Investigation/VLindsay_TA577_Report.pdf)
 
 - Platform labs:
   - CyberDefenders Labs
