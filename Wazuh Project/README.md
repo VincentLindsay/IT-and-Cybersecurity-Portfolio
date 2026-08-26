@@ -218,7 +218,8 @@
 <img width="1918" height="1002" alt="image" src="https://github.com/user-attachments/assets/d98f5d96-96c1-4de1-bbbf-025f886bb415" />
 
 - I've created a Basic dashboard, and I will add some charts to help visualize the dashboard.
-<img width="1918" height="1000" alt="image" src="https://github.com/user-attachments/assets/ef5f0007-6556-46a5-b1de-6202d84daa8b" />
+<img width="1917" height="997" alt="image" src="https://github.com/user-attachments/assets/e58f0da3-125a-479d-b910-7eea7e45574b" />
+
 
 #  9) Implementing File Integrity Monitoring
 - To begin with the implementation of File Integrity Monitoring (FIM), I started with the Windows endpoint.
