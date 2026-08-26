@@ -246,5 +246,13 @@
   - To help with the rule creation, I used ChatGPT to help with the creation of the rule.
 <img width="1597" height="997" alt="image" src="https://github.com/user-attachments/assets/a769f6dd-706a-4b25-9f83-67f210139532" />
 
--
+- I made sure ChatGPT followed the syntax of wazuh rules:
+<img width="1267" height="447" alt="image" src="https://github.com/user-attachments/assets/d87c97b1-4171-4f25-8325-d498edea0e5f" />
+
+- I added the newly created rule to the **custom_rules.xml** file.
+<img width="1904" height="857" alt="image" src="https://github.com/user-attachments/assets/0a03a858-ca33-4d63-89bb-491c74ac6010" />
+
+- We can see that the alert successfully fired off.
+<img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/8bdbe35b-f4c3-4c2f-8073-f3928fc2d388" />
+<img width="1917" height="997" alt="image" src="https://github.com/user-attachments/assets/727d31a2-92b5-4534-9bdc-3aa8759f3176" />
 
