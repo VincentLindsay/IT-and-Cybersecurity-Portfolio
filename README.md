@@ -12,6 +12,7 @@
 
 - Cybersecurity Projects:
   - [Malware Analysis Projects](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Malware%20Analysis%20Projects)
+    - [Static Analysis](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Malware%20Analysis%20Projects/Static%20Analysis/README.md) 
   - [Splunk Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Splunk%20lab)
   - [SOC homelab Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/SOC%20homelab%20project)
   - [Wazuh Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Wazuh%20Project)
