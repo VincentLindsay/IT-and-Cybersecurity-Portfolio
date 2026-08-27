@@ -24,11 +24,11 @@
 - [ 6) Installing Sysmon on the endpoints](#6-Installing-Sysmon-on-the-endpoints)
 - [ 7) Generating & reading telemetry](#7-Generating-&-reading-telemetry)
 - [ 8) Creating a dashboard](#8-Creating-a-dashboard)
-- [ 9) Implementing File Integrity Monitoring]
-- [ 10) Setting up SOAR]
-- [ 11) Creating a C2 Server]
-- [ 12) Active Response to a detection]
-- [ 13) Investigating the instruction]
+- [ 9) Implementing File Integrity Monitoring](#Implementing-File-Integrity-Monitoring)
+- [ 10) Using Wazuh's Active Response feature to a detection](#Using-Wazuh's-Active-Response-feature-to-a-detection)
+- [ 12) Creating a C2 Server]
+- [ 11) Setting up SOAR using Tines]
+
 
 
 # 1) Deploying the Wazuh Server
@@ -255,4 +255,84 @@
 - We can see that the alert successfully fired off.
 <img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/8bdbe35b-f4c3-4c2f-8073-f3928fc2d388" />
 <img width="1917" height="997" alt="image" src="https://github.com/user-attachments/assets/727d31a2-92b5-4534-9bdc-3aa8759f3176" />
+
+# 10) Using Wazuh's Active Response feature to a detection
+- In this section I created an additional rule on Wazuh that detects for multiple SSH login attempts from a single source IP.
+  - Similar to section 9, I used ChatGPT to help create the rule, but I made sure it follows the syntax of wazuh rules.
+<img width="1097" height="912" alt="image" src="https://github.com/user-attachments/assets/ae35ac52-4ebb-4ce4-8db8-bbee6160f61a" />
+
+- We can see that the AI generated the rule, however, I will test the rule to verify that it worked.
+  - I then added the newly created rule to Wazuh's **local_rules.xml**.
+<img width="1917" height="1006" alt="image" src="https://github.com/user-attachments/assets/6f79de88-06da-4861-9823-d9b722170a51" />
+ 
+- Now that the rule was successfully tested, I began to configure active response.
+  - In the **ossec.conf** file, I enabled active-response, and added the command **firewall-drop**, which adds the source IP address to a the firewall deny list.
+<img width="672" height="152" alt="image" src="https://github.com/user-attachments/assets/a21c66c7-4540-4ebc-8f78-361052aaf2ea" />
+
+- After restarting the Wazuh manger service, I confirmed that the active response command of **firewall-drop** was working.
+<img width="1161" height="180" alt="image" src="https://github.com/user-attachments/assets/4c721338-323b-4ccf-89b3-8047addfc15d" />
+
+- To test that the active-response configuration was successful, I ran a proof of concept using ping, and attempting to SSH into the Ubuntu endpoint.
+<img width="1540" height="577" alt="image" src="https://github.com/user-attachments/assets/598c8244-5668-48d3-9b2c-016c609621c2" />
+
+- We can see that the 2nd SSH attempt timed out, and Wazuh stopped the SSH login attempts to the Ubuntu endpoint.
+<img width="1912" height="935" alt="image" src="https://github.com/user-attachments/assets/abf711bc-6848-4ace-9ed4-20ebec324bd0" />
+
+- To restore SSH connectivity between the Windows, and Ubuntu endpoints, I changed the Iptables configurations.
+<img width="1180" height="530" alt="image" src="https://github.com/user-attachments/assets/fd7640a5-1742-4b79-8554-ff0873682bb5" />
+<img width="927" height="257" alt="image" src="https://github.com/user-attachments/assets/c8600c06-4c43-4fab-8e69-0597ed2d81ef" />
+
+
+# 12) Creating a C2 Server
+# 13) Setting up SOAR using Tines
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
