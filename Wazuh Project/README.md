@@ -26,8 +26,8 @@
 - [ 8) Creating a dashboard](#8-Creating-a-dashboard)
 - [ 9) Implementing File Integrity Monitoring](#Implementing-File-Integrity-Monitoring)
 - [ 10) Using Wazuh's Active Response feature to a detection](#Using-Wazuh's-Active-Response-feature-to-a-detection)
-- [ 12) Creating a C2 Server]
-- [ 11) Setting up SOAR using Tines]
+- [ 11) Creating a C2 Server](#Creating-a-C2-Server)
+- [ 12) Setting up SOAR using Tines]
 
 
 
@@ -282,7 +282,7 @@
 <img width="1180" height="530" alt="image" src="https://github.com/user-attachments/assets/fd7640a5-1742-4b79-8554-ff0873682bb5" />
 <img width="927" height="257" alt="image" src="https://github.com/user-attachments/assets/c8600c06-4c43-4fab-8e69-0597ed2d81ef" />
 
-# 12) Creating a C2 Server
+# 11) Creating a C2 Server
 - This section features the creation of a reverse shell using metasploit against both the Windows & Ubuntu endpoints.
 - Since I have a kali machine already deployed, I SSH'd into via my host machine using powershell
 <img width="1092" height="180" alt="image" src="https://github.com/user-attachments/assets/96cae471-c0e9-49b0-a75d-ace21a764fbe" />
@@ -351,8 +351,12 @@
 
 - This concludes the attacker section.
 
+# 12) Setting up SOAR using Tines
+- Prior to creating our SOAR environment, I installed configuration files to better parse the linux logs.
+<img width="1917" height="165" alt="image" src="https://github.com/user-attachments/assets/144337fd-c1ba-491a-b118-49d4daf02e4d" />
 
-# 13) Setting up SOAR using Tines
+- We can see that the logs parsed, and are much easier to read.
+<img width="1492" height="345" alt="image" src="https://github.com/user-attachments/assets/c858e051-0f73-41bd-a82a-e570b00d04e8" />
 
 
 
