@@ -282,8 +282,76 @@
 <img width="1180" height="530" alt="image" src="https://github.com/user-attachments/assets/fd7640a5-1742-4b79-8554-ff0873682bb5" />
 <img width="927" height="257" alt="image" src="https://github.com/user-attachments/assets/c8600c06-4c43-4fab-8e69-0597ed2d81ef" />
 
-
 # 12) Creating a C2 Server
+- This section features the creation of a reverse shell using metasploit against both the Windows & Ubuntu endpoints.
+- Since I have a kali machine already deployed, I SSH'd into via my host machine using powershell
+<img width="1092" height="180" alt="image" src="https://github.com/user-attachments/assets/96cae471-c0e9-49b0-a75d-ace21a764fbe" />
+
+- I began with first disabling Windows Defender via group policy.
+<img width="866" height="662" alt="image" src="https://github.com/user-attachments/assets/08ee2fab-c7bd-4f80-84d8-e70273b458bb" />
+
+- I also added an exclusion to the **C:** drive just to ensure that everything works.
+<img width="1285" height="610" alt="image" src="https://github.com/user-attachments/assets/28fe5556-5fcf-45a3-806e-4a7f1ba444b9" />
+
+- I created a reverse_tcp payload for the Windows machine.
+<img width="1506" height="160" alt="image" src="https://github.com/user-attachments/assets/ce313ad5-ffc9-427d-b112-87250e8007d8" />
+
+- I then also created a similar payload for the Ubuntu machine.
+<img width="1682" height="185" alt="image" src="https://github.com/user-attachments/assets/1070d5eb-a0e4-4035-b86d-a7a59e31d9ce" />
+
+- We can see that both payloads were created successfully.
+<img width="1756" height="537" alt="image" src="https://github.com/user-attachments/assets/24725531-a0af-4868-9faa-33222b6e375d" />
+
+- I then spawned an http server.
+<img width="1550" height="846" alt="image" src="https://github.com/user-attachments/assets/83e4e64a-c822-4c7d-a5bf-217cfcc79f36" />
+
+- I downloaded the file, and began to start the listener service from Metasploit.
+<img width="1326" height="482" alt="image" src="https://github.com/user-attachments/assets/fc6babbe-27d1-418e-9f90-a0742e4cdd64" />
+<img width="1436" height="272" alt="image" src="https://github.com/user-attachments/assets/6f141c9b-b784-4fa7-aea5-8776931ff48b" />
+
+- I then set the correct exploit for this scenario, as well as configure the local host as the kali machine.
+  - I also executed the exploit against the Windows machine, as well executing the file locally on the Windows machine.
+<img width="1615" height="301" alt="image" src="https://github.com/user-attachments/assets/5f73a7b7-5c8e-4434-aacc-823ee0d49ea0" />
+
+- To identify any vulnerabilities on the Windows machine, I used the **local exploit suggester** module.
+<img width="1426" height="417" alt="image" src="https://github.com/user-attachments/assets/38ff0a33-ae53-43a2-9c17-6120b9fdd5aa" />
+
+- I then Identified any vulnerabilities on the Windows machine.
+<img width="1917" height="557" alt="image" src="https://github.com/user-attachments/assets/dfa313b1-ff1e-4616-894e-d2989a6f0fd9" />
+
+- For this lab I attempted to use the **exploit/windows/local/bypassuac_fodhelper** exploit.
+<img width="1210" height="236" alt="image" src="https://github.com/user-attachments/assets/618615fc-bd33-4fd1-808d-80350ad0b488" />
+
+- The attempt to run the exploit failed as the target was already an Administrator.
+  - I then executed the meterpreter shell, and created the reverse shell.
+ <img width="1912" height="327" alt="image" src="https://github.com/user-attachments/assets/76c66f74-e429-458d-904d-2eb25e48667a" />
+
+- We can see that we have an elevated privilege shell.
+<img width="1917" height="487" alt="image" src="https://github.com/user-attachments/assets/743db3fa-a682-4d6b-9595-64cba02e1059" />
+
+- I then created an account named **"sus4n"**, and added the account to the **administrators** group.
+<img width="1317" height="240" alt="image" src="https://github.com/user-attachments/assets/c4190530-141b-4a57-b50c-bf0e968db3f4" />
+
+- In Wazuh, we can see the commands entered, and the custom filename.
+<img width="1492" height="490" alt="image" src="https://github.com/user-attachments/assets/e25c6b9a-f55d-479f-9c53-2fa919d541bc" />
+<img width="1467" height="62" alt="image" src="https://github.com/user-attachments/assets/59095b31-579c-4006-828d-9d9c8f218439" />
+
+- I then began to attempt to exploit the Ubuntu machine.
+<img width="1916" height="325" alt="image" src="https://github.com/user-attachments/assets/db174f72-682e-4b33-b73d-30ba722f386b" />
+
+- I retrieved the file, and gave it executable permissions.
+<img width="1732" height="602" alt="image" src="https://github.com/user-attachments/assets/89551e25-1af9-441e-8e91-f213b9d81a6a" />
+- I then configured the settings for metasploit to use the **linux/x64/meterpreter/reverse_tcp** payload, and executed the exploit.
+<img width="1366" height="352" alt="image" src="https://github.com/user-attachments/assets/37289bf1-d10f-4b12-b6b1-cada868f76f1" />
+- In the reverse shell, I also ran some commands similar to what an attacker would enter.
+<img width="1631" height="227" alt="image" src="https://github.com/user-attachments/assets/446676fb-ec52-4848-aff8-6111c3a19130" />
+
+- Similarly, we can also see the commands entered on Wazuh.
+<img width="1917" height="777" alt="image" src="https://github.com/user-attachments/assets/d5daf84d-671e-4d76-a85c-0be8c1bb3a01" />
+
+- This concludes the attacker section.
+
+
 # 13) Setting up SOAR using Tines
 
 
