@@ -5,6 +5,10 @@
   - Direct link to the Splunk lab: https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Splunk%20lab
   - I will also write a report of an investigation of Malicious activity.
  
+# SOAR Topology
+<img width="1917" height="996" alt="image" src="https://github.com/user-attachments/assets/9ec5a1b2-3a6d-4b94-bb4c-87493e2f98da" />
+
+ 
 # Machines & tools used in this lab
 - VMware Workstation Pro
   - VMware is the hypervisor.
@@ -419,12 +423,30 @@
 <img width="1912" height="995" alt="image" src="https://github.com/user-attachments/assets/6b495c3d-b86f-4deb-b3ab-9bb6a40cacc1" />
 
 - The next step is to integrate Wazuh Active response into Tines, and I will need to use **ngrok** for port forwarding since Wazuh is on prem.
+- I began to install ngrok on the Wazuh server.
+<img width="1321" height="137" alt="image" src="https://github.com/user-attachments/assets/c887abc3-606a-4c5e-9998-28d27ebde3b0" />
 
+- I added my authentication token to the configurations
+<img width="1146" height="52" alt="image" src="https://github.com/user-attachments/assets/c0680a86-ca78-482a-9e75-494135345bab" />
 
+- I started the ngrok service using the same port as the Wazuh API: 55000
+  - I created a Tines credential so that Tines can access the Wazuh API
+<img width="832" height="646" alt="image" src="https://github.com/user-attachments/assets/e481639c-b45e-4277-a465-95527582f27e" />
+ 
+- Now the Wazuh credential was successfully created.
+<img width="1417" height="572" alt="image" src="https://github.com/user-attachments/assets/4f2a5820-e0fa-47a1-8c3a-962b884bb6ef" />
+<img width="552" height="327" alt="image" src="https://github.com/user-attachments/assets/9eefab2b-d919-49b1-9c36-0c39a83e7773" />
 
+- After some time I created a further condition that will have the AI agent block the IP address, after I approve it to block the IP address using the custom webpage.
+<img width="1036" height="672" alt="image" src="https://github.com/user-attachments/assets/8eb03ced-0b8b-4f1e-b554-b1216df65dc1" />
 
+- I also added an action that will send the submission page to the slack post made by the Agent
+<img width="1696" height="760" alt="image" src="https://github.com/user-attachments/assets/ab82f76b-1f22-4443-be63-9b09126504bc" />
 
+- We can see that the Post was successfully made into the Slack post.
+<img width="1397" height="711" alt="image" src="https://github.com/user-attachments/assets/43069ffd-64d1-4596-84e8-b445c9ba06b9" />
 
+- After sometime, I was able to configure the HTTP request task to block a malicious IP.
 
 
 
