@@ -351,7 +351,7 @@
 
 - This concludes the attacker section.
 
-# 12) Setting up SOAR using Tines
+# 12) Setting up a SOAR Workflow using Tines
 - Prior to creating our SOAR environment, I installed configuration files to better parse the linux logs.
 <img width="1917" height="165" alt="image" src="https://github.com/user-attachments/assets/144337fd-c1ba-491a-b118-49d4daf02e4d" />
 
@@ -359,18 +359,66 @@
 <img width="1492" height="345" alt="image" src="https://github.com/user-attachments/assets/c858e051-0f73-41bd-a82a-e570b00d04e8" />
 
 
+- To configure the Tines workflow, I began with the configuration of the Wazuh manager.
+  - Since Wazuh does not have Tines natively in its integrations, I made a custom integration known as **Tines** that uses the same configurations as Shuffle.
+<img width="1372" height="812" alt="image" src="https://github.com/user-attachments/assets/b958c08f-82e7-45ae-9fbd-37d42e61f731" />
 
+- I also changed the ownership of the files to the Wazuh account.
+<img width="1129" height="692" alt="image" src="https://github.com/user-attachments/assets/3790a520-da3f-4955-87cd-7c67e221d61d" />
 
+- Next I began to create the SOAR Workflow, and I began with creating a Webhook for Wazuh
+<img width="1631" height="165" alt="image" src="https://github.com/user-attachments/assets/4fc90883-f149-433c-9fee-2ec91d5d8c18" />
 
+- I configured Wazuh to send the alert pertaining to SSH brute force to Tines, as well as the webhook was created.
+- To test the integration, I attempted to brute force into the Ubuntu endpoint via the Windows endpoint.
+<img width="1482" height="982" alt="image" src="https://github.com/user-attachments/assets/b8ae2800-22c9-4eed-9d06-6b69d75e1eaf" />
 
+- We can see that the integration was sucessfull.
+- I will now use an AI agent to enrich data like IP addresses into OSINT tools like Abuseipdb, and VirusTotal
+<img width="656" height="312" alt="image" src="https://github.com/user-attachments/assets/ec6beaf3-544a-4640-9b70-5cbb68eed123" />
 
+- The agent was given tasks like search the IP address on those platforms, and I then added the tool's API's into the agent.
+<img width="1647" height="347" alt="image" src="https://github.com/user-attachments/assets/1882e7b0-6952-414b-8f90-7d624964afd7" />
 
+- I created, and integrated the AbuseIPdb API into the AI agent, and I also connected the API for VirusTotal.
+<img width="742" height="296" alt="image" src="https://github.com/user-attachments/assets/6acd8f8f-a9ef-42cb-b8de-ba23cb2a8824" />
 
+- I then integrated slack as the case management platform, and a method for the Agent to report alerts.
+  - I also created a custom slack channel for this project.
+<img width="1917" height="547" alt="image" src="https://github.com/user-attachments/assets/a0beea59-5037-4002-aa9e-b638832f5a6a" />
+ 
+- To intregate slack into Tines, I created a custom slack application for this project.
+<img width="865" height="527" alt="image" src="https://github.com/user-attachments/assets/d121de4d-d05a-4ca6-8c7b-906f13aade7d" />
 
+- I created the custom application.
+<img width="1317" height="622" alt="image" src="https://github.com/user-attachments/assets/cc863b89-ccf3-4361-bf19-d131c6a75173" />
 
+- I added permissions for the bot to be able to write messages.
+<img width="885" height="411" alt="image" src="https://github.com/user-attachments/assets/2ede409e-f39a-4383-af45-58fafefc06cf" />
 
+- As a result, I installed the application into the slack workspace, and integrated the OAuth token into Tines.
+<img width="1222" height="722" alt="image" src="https://github.com/user-attachments/assets/cc6a7549-1a8a-453f-9df6-f0892bab5a34" />
 
+- I then began with configuring the AI agent's instructions so that it acts like a Tier 1 SOC Analyst.
+<img width="436" height="762" alt="image" src="https://github.com/user-attachments/assets/67756fc7-a728-484d-8c8c-af9eb5d5b883" />
 
+- I also tested the Agent to see if the message will be sent to slack regarding the SSH attempts.
+<img width="1167" height="777" alt="image" src="https://github.com/user-attachments/assets/1e1ad7f5-d333-497a-9153-83290e532be8" />
+
+- We can see that the Integration was successful based on the Agent's report.
+<img width="1387" height="565" alt="image" src="https://github.com/user-attachments/assets/61146da3-ebce-4119-8293-8879357acc19" />
+
+- I configured active response for this SOAR workflow.
+- I added some additional configurations for the AI Agent to extract data.
+<img width="437" height="707" alt="image" src="https://github.com/user-attachments/assets/f8dd615c-958c-4576-995a-e5285218f49c" />
+
+- After some time, I added the conditional settings to match if the Agent Recommends blocking the IOC's or not at all
+<img width="1825" height="822" alt="image" src="https://github.com/user-attachments/assets/a32a0002-549a-4377-a1c0-952dc9e92c87" />
+
+- I created the page that asks the Human Analyst if they want to block the IP address of interest
+<img width="1912" height="995" alt="image" src="https://github.com/user-attachments/assets/6b495c3d-b86f-4deb-b3ab-9bb6a40cacc1" />
+
+- The next step is to integrate Wazuh Active response into Tines, and I will need to use **ngrok** for port forwarding since Wazuh is on prem.
 
 
 
