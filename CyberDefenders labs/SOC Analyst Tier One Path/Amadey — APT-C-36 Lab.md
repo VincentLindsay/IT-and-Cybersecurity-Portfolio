@@ -1,6 +1,6 @@
 # Amadey — APT-C-36 Lab Write-up [CyberDefenders]
 
-<img width="1100" height="357" alt="image" src="https://github.com/user-attachments/assets/cf7504cd-31b7-47fb-8c49-fc9e785dfc6d" />
+<img width="1275" height="412" alt="image" src="https://github.com/user-attachments/assets/dc42accf-3d6a-4302-9632-de2a7e162c34" />
 
 lab link: https://cyberdefenders.org/blueteam-ctf-challenges/amadey-apt-c-36/
 
@@ -18,10 +18,9 @@ Since I am not too familiar with Volatility, I used a cheat sheet from the volat
 For this question, I utilized the Pstree plugin.
 
 
-<img width="1100" height="64" alt="image" src="https://github.com/user-attachments/assets/cf9d6c92-14e7-444e-8bd9-11445480c04a" />
+<img width="1267" height="270" alt="image" src="https://github.com/user-attachments/assets/37aa352f-0c85-410a-8fcb-6e783c72f734" />
 
 
-<img width="1100" height="164" alt="image" src="https://github.com/user-attachments/assets/67f14410-48d2-4d28-a591-9cb3177dacf2" />
 
 We can see evidence that another process known as lssass.exe attempts to masquerade the legitimate lsass.exe process.
 
@@ -31,7 +30,7 @@ We can see evidence that another process known as lssass.exe attempts to masquer
 Since we know the PID of the malicious lssass.exe, we can use the dlllist plugin to identify the absolute path of the process.
 
 
-<img width="1100" height="151" alt="image" src="https://github.com/user-attachments/assets/5339a884-56a6-4013-9e10-f43e0bd9c13b" />
+<img width="1280" height="191" alt="image" src="https://github.com/user-attachments/assets/08fc7dde-9995-4a2e-a196-360978ca1ff8" />
 
 As a result, we can see that the path is: C:\Users\0XSH3R~1\AppData\Local\Temp\925e7e99c5\lssass.exe
 
@@ -42,7 +41,7 @@ As a result, we can see that the path is: C:\Users\0XSH3R~1\AppData\Local\Temp\9
 Using the NetScan plugin, we can identify the malicious process, as well as the C2 server’s IP address it interacts with.
 
 
-<img width="1100" height="70" alt="image" src="https://github.com/user-attachments/assets/14833371-9ca2-4cc3-babc-3f4856780186" />
+<img width="1276" height="272" alt="image" src="https://github.com/user-attachments/assets/4aa97d6f-cc92-4f4b-a5ea-553e1f3f3e69" />
 
 We can verify this by identifying the PID of the malicious process.
 
@@ -55,12 +54,12 @@ We can verify this by identifying the PID of the malicious process.
 For this question, I created a memory map of our current memory dump to locate potential HTTP requests.
 
 
-<img width="1100" height="30" alt="image" src="https://github.com/user-attachments/assets/c4adb359-1022-400c-a14b-543e1c018037" />
+<img width="1277" height="46" alt="image" src="https://github.com/user-attachments/assets/f752d6c9-bbe6-4953-b2b8-0296a5fa95b4" />
 
 We can see 2 different malicious dlls that the C2 fetches.
 
 
-<img width="1100" height="200" alt="image" src="https://github.com/user-attachments/assets/973d3ba7-6d20-489a-bc04-f10887b02806" />
+<img width="1277" height="236" alt="image" src="https://github.com/user-attachments/assets/a1416b52-a583-4189-b94c-838f370a192c" />
 
 ---
 
@@ -69,7 +68,7 @@ We can see 2 different malicious dlls that the C2 fetches.
 Using the cmdline plugin, we can see the malicious dlls being executed by rundll32.exe.
 
 
-<img width="1100" height="115" alt="image" src="https://github.com/user-attachments/assets/201f9762-67b5-4bff-a92d-673cd28a5ed2" />
+<img width="1267" height="145" alt="image" src="https://github.com/user-attachments/assets/73eab094-2510-4ff3-9710-125e3af99e82" />
 
 ---
 **Q6: Once retrieved, the malware aims to activate its additional components. Which child process is initiated by the malware to execute these files?**
@@ -82,12 +81,12 @@ Using the cmdline plugin, we were able to verify that the child process is rundl
 
 For this section, I used the filescan plugin, and utilized grep to search for specifically the lssass.exe file.
 
-<img width="1100" height="70" alt="image" src="https://github.com/user-attachments/assets/4734d370-8f18-4640-bcff-74c3d5b5dc7a" />
+<img width="1277" height="91" alt="image" src="https://github.com/user-attachments/assets/e5918345-382e-409b-a67f-6f4ac122bdde" />
 
 We can see that the malware is hiding itself in the Tasks folder of System32.
 
 
-<img width="1100" height="72" alt="image" src="https://github.com/user-attachments/assets/4bda9765-1037-46cd-9163-7da61d093e62" />
+<img width="1276" height="90" alt="image" src="https://github.com/user-attachments/assets/c6d98c37-e0d3-401d-9a36-5976bd4459cc" />
 
 ---
 This concludes my write-up. 
