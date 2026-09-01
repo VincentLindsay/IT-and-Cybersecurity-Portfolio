@@ -1,5 +1,7 @@
 # RetailBreach Lab Write-Up [Cyber Defenders]
-<img width="1908" height="440" alt="image" src="https://github.com/user-attachments/assets/3cf64a2f-5198-45c9-8512-4701214f7fc8" />
+
+<img width="1272" height="292" alt="image" src="https://github.com/user-attachments/assets/eabcf7d9-8df9-4840-8ae2-675fda462bb3" />
+
 lab link: https://cyberdefenders.org/blueteam-ctf-challenges/retailbreach/
 
 ---
@@ -24,7 +26,7 @@ Q1: Identifying an attacker's IP address is crucial for mapping the attack's ext
 - When viewing the conversations between IPs within the PCAP, we can see two different conversations taken place. One conversation involves over 10,000+ packets, while the other has only 179.
 - Moreover, we can also see that the first IP address of the first conversation is sending numerous packets to the other domain.
 - We can reasonably assume the IP address of the TA is the first IP address in the first conversation.
-<img width="1918" height="762" alt="image" src="https://github.com/user-attachments/assets/41b76e33-3966-4c6b-b35a-6b4a53ba87ca" />
+<img width="1267" height="505" alt="image" src="https://github.com/user-attachments/assets/c850710c-ac2d-405f-a639-a2dfee7e121a" />
 
 ---
 
@@ -32,11 +34,11 @@ Q2: The attacker used a directory brute-forcing tool to discover hidden paths. W
 
 
 - Now that we know what the attacker's IP address is, we can conduct further analysis on what tool the attacker used to enumerate we directories.
-<img width="1918" height="665" alt="image" src="https://github.com/user-attachments/assets/267b06a5-2c27-4896-98aa-6b1bd534ace6" />
+<img width="1272" height="432" alt="image" src="https://github.com/user-attachments/assets/74f3ba23-840e-4c96-b223-96cec9e5736c" />
 
 - When searching for http traffic associated with the TA's IP, we can see the enumeration of several different web directories
 - Further down, there is a long conversation that shows the successful enumeration of several web directories using gobuster
-<img width="1918" height="815" alt="image" src="https://github.com/user-attachments/assets/391a88db-2d5d-4d7e-9c02-1a8188e15b93" />
+<img width="1262" height="536" alt="image" src="https://github.com/user-attachments/assets/6ca0a8fe-4279-496a-8ff1-e6f00e0f79dc" />
 
 
 ---
@@ -44,7 +46,9 @@ Q2: The attacker used a directory brute-forcing tool to discover hidden paths. W
 Q3: Cross-Site Scripting (XSS) allows attackers to inject malicious scripts into web pages viewed by users. Can you specify the XSS payload that the attacker used to compromise the integrity of the web application?
 
 - When using the same filter like above, I found 2 HTTP POST requests that add a script into the **/reviews** directory
-<img width="1915" height="745" alt="image" src="https://github.com/user-attachments/assets/a5369ad9-708b-4f25-9a2d-20b9e2363b38" />
+<img width="1267" height="497" alt="image" src="https://github.com/user-attachments/assets/3cbde356-1a84-40ed-8fb4-229cc1d7df27" />
+
+
 - Upon further analysis of the HTTP stream, we can find the malicious script embedded in the HTML of the **/reviews** directory
 
 ---
@@ -54,7 +58,7 @@ Q4: Pinpointing the exact moment an admin user encounters the injected malicious
 - I found this question to be somewhat difficult.
 - To find the exact time an administrator would encounter the malicious script, we need to search for the specific directory where the malicious script was injected
 
-<img width="1918" height="426" alt="image" src="https://github.com/user-attachments/assets/51b9d29b-cd9c-4038-a969-f49493d3c463" />
+<img width="1272" height="281" alt="image" src="https://github.com/user-attachments/assets/72a2d0f4-d84c-467b-8944-842e7ec53d2c" />
 
 - When viewing the last packet's details, we can view the time in UTC where the admin would view the script
   
@@ -63,9 +67,11 @@ Q4: Pinpointing the exact moment an admin user encounters the injected malicious
 Q5: The theft of a session token through XSS is a serious security breach that allows unauthorized access. Can you provide the session token that the attacker acquired and used for this unauthorized access?
 
 - When analyzing traffic based on the **reviews.php** directory, I found different traffic associated with the session
-<img width="1918" height="560" alt="image" src="https://github.com/user-attachments/assets/90d203b2-ce46-4a38-a848-054f002cacf3" />
+<img width="1267" height="365" alt="image" src="https://github.com/user-attachments/assets/6433bd4f-77d6-43a4-bf89-a2b2b0c417ff" />
+
+
 - We can see that session token the attacker stole.
-<img width="1918" height="707" alt="image" src="https://github.com/user-attachments/assets/7bebafc0-d118-4280-b74a-04a2b60186ce" />
+<img width="1272" height="467" alt="image" src="https://github.com/user-attachments/assets/7cc0a8a3-0d92-4e3d-b6eb-ca05eff2d50f" />
 
 
 
@@ -74,11 +80,11 @@ Q5: The theft of a session token through XSS is a serious security breach that a
 Q6: Identifying which scripts have been exploited is crucial for mitigating vulnerabilities in a web application. What is the name of the script that was exploited by the attacker?
 
 - By using the session token, and the attacker's IP address, we can filter for events with these items, and find the malicious script
-<img width="1918" height="562" alt="image" src="https://github.com/user-attachments/assets/d2068a0e-3d13-4300-b8f9-887160d72674" />
+<img width="1267" height="380" alt="image" src="https://github.com/user-attachments/assets/5c768ef5-7307-467d-af8e-c4be7d64cc9a" />
  
 ---
 
 Q7: Exploiting vulnerabilities to access sensitive system files is a common tactic used by attackers. Can you identify the specific payload the attacker used to access a sensitive system file?
 
 - By using the same filter, we can also see the sensitive file accessed by the attacker's script.
-<img width="1918" height="428" alt="image" src="https://github.com/user-attachments/assets/5eccb522-2e28-46bb-b97a-72494a131e06" />
+<img width="1267" height="290" alt="image" src="https://github.com/user-attachments/assets/73293b58-a5d5-4322-94f3-b587ba83357e" />
