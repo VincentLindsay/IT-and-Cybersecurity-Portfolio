@@ -1,5 +1,5 @@
 # PoisonedCredentials Lab Write-up [CyberDefenders]
-<img width="1491" height="381" alt="image" src="https://github.com/user-attachments/assets/b5cf5e26-b10d-4d44-b018-956d6dbaea3a" />
+<img width="1272" height="325" alt="image" src="https://github.com/user-attachments/assets/6b557f41-8a73-4a07-8e24-1a73bf3f8026" />
 
 lab link: [https://cyberdefenders.org/blueteam-ctf-challenges/poisonedcredentials/]
 
@@ -25,12 +25,12 @@ We are given a .PCAP to examine the traffic in this lab
 
 I noticed that there were multiple conversations between multiple machines resembling the IP address listed above.
 
-<img width="1100" height="163" alt="image" src="https://github.com/user-attachments/assets/3fa624bb-0d0e-4b39-befa-db5983061076" />
+<img width="1267" height="191" alt="image" src="https://github.com/user-attachments/assets/21900933-1314-4670-adec-3049bf6401c3" />
 
 Upon filtering for specific traffic using the IP address, I found interesting LLMNR queries made by the attacker.
 
 
-<img width="1100" height="222" alt="image" src="https://github.com/user-attachments/assets/45eec6dd-86a4-46ab-83fe-2e0700981a71" />
+<img width="1267" height="257" alt="image" src="https://github.com/user-attachments/assets/da3d5116-8b80-400b-8c09-62abd0815ff5" />
 
 I found that the attacker may have misspelled a file share name, giving their cover away while using a legitimate machine in the network.
 
@@ -41,12 +41,12 @@ I found that the attacker may have misspelled a file share name, giving their co
 Since I know that the machine with the IP address 192.168.232.162 is a benign machine, I searched for conversations with this machine IP, as well as the LLMNR traffic, and additional responses.
 
 
-<img width="1100" height="130" alt="image" src="https://github.com/user-attachments/assets/5620d67f-7b67-4df1-bed5-9a0f5d2badd4" />
+<img width="1265" height="155" alt="image" src="https://github.com/user-attachments/assets/ece0a03d-5599-4b97-ae1c-cdf362c19d6b" />
 
 In the image, we can see that there is a machine that is responding to to the queries as a legitimate machine.
 
 
-<img width="1100" height="237" alt="image" src="https://github.com/user-attachments/assets/822adcaf-658b-4bc7-b7a2-9044c114e695" />
+<img width="1265" height="277" alt="image" src="https://github.com/user-attachments/assets/8b07ac03-8507-484c-b45e-67767c2616f8" />
 
 We can further see that this rogue machine is the one responsible for the malicious LLMNR and MDNS traffic.
 
@@ -57,7 +57,7 @@ We can further see that this rogue machine is the one responsible for the malici
 To find the second machine, I searched on Wireshark for traffic that pertains the second machine
 
 
-<img width="1100" height="197" alt="image" src="https://github.com/user-attachments/assets/accfda85-af2c-49ff-a635-9c4592ae9fea" />
+<img width="1265" height="227" alt="image" src="https://github.com/user-attachments/assets/68b17e3f-b68c-479b-be52-2f7e4fbb342d" />
 
 With this filter I can see the second poisoned machine that received the responses.
 
@@ -67,14 +67,14 @@ With this filter I can see the second poisoned machine that received the respons
 
 When filtering for traffic based on the second recipient machine, I was able to find evidence that the attacker compromised an account via SMB.
 
-<img width="1100" height="233" alt="image" src="https://github.com/user-attachments/assets/5a0527e9-9b06-4bf5-bc59-2c3858d8b630" />
+<img width="1267" height="272" alt="image" src="https://github.com/user-attachments/assets/c407f80f-a972-4771-9b61-177a1a2ec376" />
 
 **Q5: As part of our investigation, we aim to understand the extent of the attacker’s activities. What is the hostname of the machine that the attacker accessed via SMB?**
 
 When viewing the TCP stream of the filter listed above, I was able to find further evidence that the attacker was able to breach the user account.
 
 
-<img width="1100" height="135" alt="image" src="https://github.com/user-attachments/assets/0be6b02d-4e2d-49d9-8720-9c4f01be38e4" />
+<img width="1266" height="160" alt="image" src="https://github.com/user-attachments/assets/c33dcf6b-6086-4cf8-ac34-f1e922fbd4bb" />
 
 In the screenshot, we can see the NTLM authentication, as well as the domain of the network, and the respective compromised machine via the hostname.
 
