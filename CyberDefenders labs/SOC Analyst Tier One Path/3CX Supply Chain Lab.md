@@ -1,6 +1,7 @@
 # 3CX Supply Chain Lab Write-Up [CyberDefenders]
 
-<img width="1100" height="348" alt="image" src="https://github.com/user-attachments/assets/4de8db73-4bac-4ffc-8894-2d5d8bbca44a" />
+<img width="1270" height="341" alt="image" src="https://github.com/user-attachments/assets/b1ee294b-cc42-412e-bdd1-dea484875468" />
+
 Lab link: https://cyberdefenders.org/blueteam-ctf-challenges/3cx-supply-chain/
 
 ---
