@@ -37,7 +37,7 @@ The file hash will let me conduct further research on the malware. When accessin
 When viewing the malware’s behavior on VT, we can see that it spawns two DLLs: ffmpeg.dll, and d3dcompiler_47.dll. I cross referenced the malware’s behavior in the Fortinet article listed above.
 
 
-<img width="1057" height="412" alt="image" src="https://github.com/user-attachments/assets/3add8b94-064e-4b14-9146-bbbb5fc091ed" />
+<img width="1100" height="129" alt="image" src="https://github.com/user-attachments/assets/26708ce1-02d9-43e0-a32e-56ae59cff649" />
 
 ---
 
