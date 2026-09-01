@@ -1,7 +1,7 @@
 # Yellow RAT Lab Write-up [CyberDefenders]
 
 
-<img width="1100" height="247" alt="image" src="https://github.com/user-attachments/assets/caeb68e2-3733-4dca-9b66-7044bf487d36" />
+<img width="1180" height="302" alt="image" src="https://github.com/user-attachments/assets/48433e85-23e1-4a6c-b8e1-b48ebba5a70a" />
 
 lab link: https://cyberdefenders.org/blueteam-ctf-challenges/yellow-rat/
 
@@ -21,10 +21,11 @@ Tools Used:
 
 Upon initial examination of the MD5 hash, we can see that this file may be a trojan detected on VirusTotal.
 
-<img width="1100" height="566" alt="image" src="https://github.com/user-attachments/assets/d9dd11f6-99eb-461c-867a-54c0c6761e7b" />
+<img width="1271" height="651" alt="image" src="https://github.com/user-attachments/assets/11f4fe12-8724-4ce6-afd3-74f54e01a8b0" />
+
 And when using HybridAnalysis, I also noticed the file pertains to the Jupyter family, and more specifically, this file pertains to the Yellow-Cockatoo threat actor.
 
-<img width="1100" height="240" alt="image" src="https://github.com/user-attachments/assets/f6bb6b93-712d-41df-b013-d2e591759592" />
+<img width="1262" height="281" alt="image" src="https://github.com/user-attachments/assets/92ee3a89-f287-4f39-bc32-e1158c1b5fa6" />
 
 ---
 
@@ -33,7 +34,7 @@ And when using HybridAnalysis, I also noticed the file pertains to the Jupyter f
 You can see the name of the **dll** under the MD5 hash:
 
 
-<img width="1100" height="197" alt="image" src="https://github.com/user-attachments/assets/c909623a-4a0f-4173-911c-ddae51eb31e3" />
+<img width="1262" height="221" alt="image" src="https://github.com/user-attachments/assets/b23cbdc3-8cdb-401e-acee-6ce62b25da3a" />
 
 ---
 
@@ -41,7 +42,7 @@ You can see the name of the **dll** under the MD5 hash:
 
 When searching for the compilation timestamp, I checked for the portable executable details
 
-<img width="1100" height="256" alt="image" src="https://github.com/user-attachments/assets/028da60a-e0a0-4222-84e5-08a21ebf12ac" />
+<img width="1267" height="285" alt="image" src="https://github.com/user-attachments/assets/e8815868-7b53-429b-a042-8744706a4780" />
 
 ---
 **Q4: Understanding when the broader cybersecurity community first identified the malware could help determine how long the malware might have been in the environment before detection. When was the malware first submitted to VirusTotal?**
@@ -49,7 +50,7 @@ When searching for the compilation timestamp, I checked for the portable executa
 When checking the history of the file, I can see when the file was first uploaded to VirusTotal.
 
 
-<img width="738" height="133" alt="image" src="https://github.com/user-attachments/assets/29d9ebe0-5a01-496b-8d61-385c338b6bf5" />
+<img width="922" height="177" alt="image" src="https://github.com/user-attachments/assets/3eba7aa5-9b72-4176-aeee-143a16d91c55" />
 
 ---
 
@@ -65,7 +66,7 @@ Reference: https://redcanary.com/blog/threat-intelligence/yellow-cockatoo/
 
 When viewing community posts on VirusTotal, I can see the domain of the C2 server
 
-<img width="1100" height="564" alt="image" src="https://github.com/user-attachments/assets/2c717f46-acf3-4a8b-a589-e709ad7a1eeb" />
+<img width="1316" height="652" alt="image" src="https://github.com/user-attachments/assets/cc6a816e-1557-42f9-b6dd-c5f921fc2818" />
 
 Additionally, Red Canary’s report also states the the C2 server’s domain is hxxps[://]gogohid[.]com
 
