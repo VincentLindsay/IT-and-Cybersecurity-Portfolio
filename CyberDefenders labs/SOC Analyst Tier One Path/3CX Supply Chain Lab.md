@@ -1,6 +1,6 @@
 # 3CX Supply Chain Lab Write-Up [CyberDefenders]
 
-<img width="1270" height="341" alt="image" src="https://github.com/user-attachments/assets/b1ee294b-cc42-412e-bdd1-dea484875468" />
+<img width="1306" height="325" alt="image" src="https://github.com/user-attachments/assets/042cd604-98aa-451c-9082-bfd483f970af" />
 
 Lab link: https://cyberdefenders.org/blueteam-ctf-challenges/3cx-supply-chain/
 
@@ -22,23 +22,23 @@ link:https://www.fortinet.com/blog/threat-research/3cx-desktop-app-compromised
 Since the lab gave me the actual .msi file, I obtained the SHA-256 file hash using powershell.
 
 
-<img width="957" height="122" alt="image" src="https://github.com/user-attachments/assets/21162d10-bbb2-468a-a578-e3214782fcb4" />
+<img width="1196" height="160" alt="image" src="https://github.com/user-attachments/assets/ee62fc2f-1367-4252-a443-3ebc57837bc3" />
 
 The file hash will let me conduct further research on the malware. When accessing Virus Total (VT), I found that the malware was created on 2023–03–13 06:33:26 UTC.
 
 
-<img width="595" height="215" alt="image" src="https://github.com/user-attachments/assets/e5de3fd1-3d30-478b-9bb1-a7da74ff55c5" />
+<img width="747" height="282" alt="image" src="https://github.com/user-attachments/assets/003b6758-d1f9-4d23-b716-bc7ac856ce6b" />
 
 ---
 **Q3: Executable files (.exe) are frequently used as primary or secondary malware payloads, while dynamic link libraries (.dll) often load malicious code or enhance malware functionality. Analyzing files deposited by the Microsoft Software Installer (.msi) is crucial for identifying malicious files and investigating their full potential. Which malicious DLLs were dropped by the .msi file?**
 
 
-<img width="1100" height="129" alt="image" src="https://github.com/user-attachments/assets/26708ce1-02d9-43e0-a32e-56ae59cff649" />
+<img width="1266" height="155" alt="image" src="https://github.com/user-attachments/assets/84b27e6b-df87-416e-b116-a12eda685c2e" />
 
 When viewing the malware’s behavior on VT, we can see that it spawns two DLLs: ffmpeg.dll, and d3dcompiler_47.dll. I cross referenced the malware’s behavior in the Fortinet article listed above.
 
 
-<img width="1100" height="129" alt="image" src="https://github.com/user-attachments/assets/26708ce1-02d9-43e0-a32e-56ae59cff649" />
+<img width="1270" height="156" alt="image" src="https://github.com/user-attachments/assets/da69dce7-21f1-4af4-a6fa-d35f27fadc3a" />
 
 ---
 
@@ -55,7 +55,7 @@ Link: https://attack.mitre.org/campaigns/C0057/
 When checking for the DLLs on VT, I found that the DLLs are categorized as a trojan.
 
 
-<img width="1100" height="369" alt="image" src="https://github.com/user-attachments/assets/04368c87-db95-40e5-8e73-79e654980539" />
+<img width="1262" height="432" alt="image" src="https://github.com/user-attachments/assets/71730a60-ef57-4c90-a9c2-8e06ac7d71ba" />
 
 ---
 
@@ -64,7 +64,7 @@ When checking for the DLLs on VT, I found that the DLLs are categorized as a tro
 I found the MITRE ID by searching on google:
 
 
-<img width="1100" height="332" alt="image" src="https://github.com/user-attachments/assets/5f213039-7405-4ea1-9eca-d4cbd9869a9a" />
+<img width="1262" height="382" alt="image" src="https://github.com/user-attachments/assets/5ec89081-358f-4b6d-ba59-f8a5429c0953" />
 
 ---
 
@@ -79,7 +79,7 @@ When checking the ffmpeg.dll’s capabilities, I found that it has several abili
 I can see that the DLL file uses RC4 to bypass defenses.
 
 
-<img width="400" height="302" alt="image" src="https://github.com/user-attachments/assets/97819af9-a5e5-4017-be17-81944eb6c69f" />
+<img width="506" height="381" alt="image" src="https://github.com/user-attachments/assets/965f4678-aa06-495b-b4a8-06487bf89bfd" />
 
 ---
 **Q9: As an analyst, you’ve recognized some TTPs involved in the incident, but identifying the APT group responsible will help you search for their usual TTPs and uncover other potential malicious activities. Which group is responsible for this attack?**
