@@ -3,7 +3,8 @@ lab link: [https://cyberdefenders.org/blueteam-ctf-challenges/psexec-hunt/]
 
 ---
 
-<img width="1100" height="281" alt="image" src="https://github.com/user-attachments/assets/8efc13d9-3d2b-4787-aee8-1bd150b4bd23" />
+<img width="1262" height="336" alt="image" src="https://github.com/user-attachments/assets/da0fc84e-7ec6-4bc3-a29c-50c57fcde9b5" />
+
 
 
 Scenario: An alert from the Intrusion Detection System (IDS) flagged suspicious lateral movement activity involving PsExec. This indicates potential unauthorized access and movement across the network. As a SOC Analyst, your task is to investigate the provided PCAP file to trace the attacker’s activities. Identify their entry point, the machines targeted, the extent of the breach, and any critical indicators that reveal their tactics and objectives within the compromised environment.
