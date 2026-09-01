@@ -1,6 +1,6 @@
 # Lespion Lab Write-up [CyberDefenders]
 
-<img width="1100" height="313" alt="image" src="https://github.com/user-attachments/assets/bc08dbaa-6369-457e-a82d-c2b2f1d70c3e" />
+<img width="1276" height="365" alt="image" src="https://github.com/user-attachments/assets/a0acba0c-42b7-4ae6-80b1-7732c75f16d2" />
 Lab link: https://cyberdefenders.org/blueteam-ctf-challenges/lespion/
 
 ---
@@ -23,14 +23,14 @@ Tools used:
 
 When viewing the file, I noticed there was four different files, two text files, and two image files.
 
-<img width="1071" height="190" alt="image" src="https://github.com/user-attachments/assets/892effbe-63f4-42df-8d4c-fa212d238b17" />
+<img width="1267" height="227" alt="image" src="https://github.com/user-attachments/assets/7d7294b8-4094-4699-bc5e-9aae3552a911" />
 
 When opening the Github.txt file, we are given a link to a profile. When viewing the profile, I can see various repositories, especially ones that could pertain to malicious activity (e.g mimikatz, Empire, etc.).
 
 When viewing a repository known as Project-Build — Custom-Login-Page, I can see two javascript files.
 
 
-<img width="893" height="178" alt="image" src="https://github.com/user-attachments/assets/bb2165ac-ebba-439f-902d-09e590c99fce" />
+<img width="1126" height="222" alt="image" src="https://github.com/user-attachments/assets/aafccb68-c930-410a-aa47-08c644eff5d4" />
 
 When viewing the Login Page.js file, I can evidence of a hardcoded API key.
 
@@ -41,7 +41,7 @@ When viewing the Login Page.js file, I can evidence of a hardcoded API key.
 Similar to the hardcoded API key, I can see a username and password hardcoded, however, the password was encoded in base64. I used CyberChef to decode the password, and obtain the plaintext password.
 
 
-<img width="1100" height="274" alt="image" src="https://github.com/user-attachments/assets/f6d41023-0e04-4a1b-af8b-6df10c0dee9e" />
+<img width="1267" height="315" alt="image" src="https://github.com/user-attachments/assets/f2c9a7ca-bcba-4b14-832b-1914bfb2ced2" />
 
 ---
 
@@ -49,7 +49,7 @@ Similar to the hardcoded API key, I can see a username and password hardcoded, h
 
 When viewing the various repositories, I found the respective tool for mining cryptocurrency.
 
-<img width="1100" height="189" alt="image" src="https://github.com/user-attachments/assets/f41703d9-3922-48f8-ba5d-378128a23098" />
+<img width="1242" height="217" alt="image" src="https://github.com/user-attachments/assets/6b428b5c-5298-45f8-a9a4-55b7bdc733d7" />
 
 ---
 **Q4: On which gaming website did the insider have an account?**
@@ -57,7 +57,7 @@ When viewing the various repositories, I found the respective tool for mining cr
 When google searching for the username of the insider threat, I found an Instagram account known as EMarseille99, and I found a post with a QR code.
 
 
-<img width="395" height="527" alt="image" src="https://github.com/user-attachments/assets/b3e43d5e-076e-4755-9340-b1f786ce6a3d" />
+<img width="482" height="650" alt="image" src="https://github.com/user-attachments/assets/a0349d36-7b99-4544-a13d-caa92ada5168" />
 
 This QR code takes us to the Insider’s Steam profile.
 
@@ -72,7 +72,7 @@ I found the full link to the insider’s Instagram profile after finding their p
 **Q6: Which country did the insider visit on her holiday?**
 
 
-<img width="756" height="400" alt="image" src="https://github.com/user-attachments/assets/baba3073-451a-4ad4-aaf5-1fd1b255081c" />
+<img width="941" height="492" alt="image" src="https://github.com/user-attachments/assets/c07f28f8-da91-4967-af0c-f1a7a990f20c" />
 
 When using google image search on this image, I found out what country the insider threat visited on their holiday (Singapore).
 
