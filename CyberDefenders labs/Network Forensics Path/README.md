@@ -8,7 +8,7 @@ This path involves labs from the Network Forensics path from CyberDefenders
 - [Retail Breach Lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/Network%20Forensics%20Path/RetailBreach%20Lab.md)
 - [PacketDetective Lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/Network%20Forensics%20Path/PacketDetective%20Lab.md)
 - [XLMRat Lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/Network%20Forensics%20Path/XLMRat%20Lab.md)
-
+- [Openfire lab](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/CyberDefenders%20labs/Network%20Forensics%20Path/Openfire%20Lab.md)
 
 
 
