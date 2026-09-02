@@ -8,7 +8,7 @@ As a cybersecurity analyst, you are tasked with investigating a data breach targ
 
 # Tools used
 - Wireshark
-- 
+
 
 
 # Question 1
