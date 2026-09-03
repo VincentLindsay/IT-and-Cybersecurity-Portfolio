@@ -8,6 +8,46 @@ Each lab was completed in FLAREVM for sandboxing and reduced risk to host machin
 - [SOC Analyst Tier Two Path](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/CyberDefenders%20labs/SOC%20Analyst%20Tier%20Two%20Path)
 - [Network Forensics Path](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/CyberDefenders%20labs/Network%20Forensics%20Path)
 - [Memory Forensics Path](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/CyberDefenders%20labs/Memory%20Forensics%20Path)
-- [Disk Forensics Path]
+- [Disk Forensics Path](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/CyberDefenders%20labs/Disk%20Forensics%20Path) 
+
+# Labs not affiliated with any specific path
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
