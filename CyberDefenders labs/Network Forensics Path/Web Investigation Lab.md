@@ -8,7 +8,10 @@ Late one evening, an automated alert is triggered by an unusual spike in databas
 As the lead analyst in this case, you are required to analyze the network traffic to uncover the nature of the suspicious activity. Your objectives include identifying the attack vector, assessing the scope of any potential data breach, and determining if the attacker gained further access to BookWorld's internal systems.
 
 # Tools used
-- 
+- Wireshark
+- Ipinfo
+- Cyberchef
+
 
 # Question 1
 By knowing the attacker's IP, we can analyze all logs and actions related to that IP and determine the extent of the attack, the duration of the attack, and the techniques used. Can you provide the attacker's IP?
