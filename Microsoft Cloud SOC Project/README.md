@@ -34,9 +34,16 @@
 - Links: https://github.com/Azure/Azure-Sentinel/blob/master/Tools/Microsoft-Sentinel-Training-Lab/README.md
 - https://github.com/Azure/Azure-Sentinel/blob/master/Tools/Microsoft-Sentinel-Training-Lab/Exercises/Onboarding.md
 
+- After ingesting the training logs, I wrote my first KQL query: 
+<img width="1166" height="825" alt="image" src="https://github.com/user-attachments/assets/4f1a63da-363d-4df7-afe9-2da4ba61fc22" />
 
+- The first query views emails that were allowed to pass into a user's inbox, and contained the subject had the word "Urgent"
+<img width="1167" height="822" alt="image" src="https://github.com/user-attachments/assets/221dd0bf-3369-4565-8b24-53caf290072e" />
 
+- This query analyzes failed login events for an administrator account.
+<img width="1177" height="841" alt="image" src="https://github.com/user-attachments/assets/4c88d146-8435-4ddf-a9f0-4c101b0096f0" />
 
+- This last query views the number of EventIDs in a Windows environment.
 
 
 
