@@ -10,24 +10,23 @@
 | 1 | Ticketing System Project using Active Directory | [View Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Ticketing%20System%20project%20with%20Active%20Directory/README.md)|
 
  
-- Cybersecurity Projects:
-  - [Malware Analysis Projects](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Malware%20Analysis%20Projects)
-    - [Static Analysis](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Malware%20Analysis%20Projects/Static%20Analysis/README.md) 
-  - [Splunk Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Splunk%20lab)
-  - [SOC homelab Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/SOC%20homelab%20project)
-  - [Wazuh Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Wazuh%20Project)
-  - [Network Traffic Analysis](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Network%20Traffic%20Analysis)
-    - [TA577 (Pikabot) Investigation report:](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Network%20Traffic%20Analysis/TA577%20Investigation/VLindsay_TA577_Report.pdf)
-
-- Platform labs:
-  - CyberDefenders Labs
-    - [SOC Tier One Path](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/CyberDefenders%20labs/SOC%20Analyst%20Tier%20One%20Path)
-    - [Network Forensics Path](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/CyberDefenders%20labs/Network%20Forensics%20Path)
-
-   - TryHackMe Challenges
-     - Blue Team Challenges
-       - [Easy Difficulty](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/TryHackMe%20Challenges/Blue%20Team%20Challenges/Easy%20Difficulty%20Challenges)
-       - [Medium Difficulty](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/TryHackMe%20Challenges/Blue%20Team%20Challenges/Medium%20Difficulty%20Challenges)  
+# Cybersecurity Projects:
+| Project No. | Project Name | Link |
+| :---: | :---: | :---: |
+| 1    | Malware Analysis Projects | [View Project Folder](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Malware%20Analysis%20Projects) | 
+| 1A   | Static Analysis of Malware | [View Projects](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Malware%20Analysis%20Projects/Static%20Analysis/README.md) |
+| 2 | Splunk Projects | [View Projects](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Splunk%20lab) | 
+| 3 | SOC homelab Project | [View Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/SOC%20homelab%20project) | 
+| 4 | Wazuh SIEM Project With SOAR | [View Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Wazuh%20Project) |
+| 5 | Network Traffic Analysis | [View Projects](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Network%20Traffic%20Analysis) | 
+    
+# Platform lab Write-ups
+| Platform Name | Write-up folder name | Link |
+| :---: | :---: | :---: |
+| CyberDefenders | SOC Tier One Path | [Lab Write-ups](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/CyberDefenders%20labs/SOC%20Analyst%20Tier%20One%20Path) | 
+| CyberDefenders | Network Forensics Path | [Write-ups](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/CyberDefenders%20labs/Network%20Forensics%20Path) | 
+| TryHackMe | Easy Difficulty Challenges | [ Easy Difficulty Challenge Write-ups](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/TryHackMe%20Challenges/Blue%20Team%20Challenges/Easy%20Difficulty%20Challenges)
+| TryHackMe | Medium Difficulty Challenges | [Write-ups](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/TryHackMe%20Challenges/Blue%20Team%20Challenges/Medium%20Difficulty%20Challenges)  | 
 
 
 
