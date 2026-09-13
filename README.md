@@ -4,12 +4,12 @@
 - The goal of this repository to be showcase a library of projects that I have completed across IT and Cybersecurity, with each project being organized based on if it pertains to specifically IT or Defensive Cybersecurity*.
   -  *Some projects may contain a simulated attack to map out the MITRE ATT&CK framework to identify attacker TTPs.
 
+# IT Projects
+| Project No. | Project Name | Link |
+| :---: | :---: | :---: |
+| 1 | Ticketing System Project using Active Directory | [View Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Ticketing%20System%20project%20with%20Active%20Directory/README.md)|
 
-- IT projects
-  - Ticketing System Lab using Active Directory
-    - [Ticket Simulations](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Ticketing%20System%20project%20with%20Active%20Directory/Ticket%20Simulations/README.md) 
-   - [ServiceDesk Simulation labs](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/ServiceDesk%20Simulation%20Labs)
-
+ 
 - Cybersecurity Projects:
   - [Malware Analysis Projects](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Malware%20Analysis%20Projects)
     - [Static Analysis](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Malware%20Analysis%20Projects/Static%20Analysis/README.md) 
