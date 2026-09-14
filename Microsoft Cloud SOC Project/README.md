@@ -53,22 +53,11 @@
 - With the help of ChatGPT, I created a bar chart that sorts the logins by top 5 users within an hour of the training data.
 <img width="1536" height="937" alt="image" src="https://github.com/user-attachments/assets/53564f55-c40c-4dac-b09c-25fc2a2f33b5" />
 
-```KQL
-let LatestLogTime = toscalar(
-    SecurityEvent
-    | where EventID == 4625
-    | summarize max(TimeGenerated)
-);
-SecurityEvent
-| where EventID == 4625
-| where TimeGenerated between (LatestLogTime - 1h .. LatestLogTime)
-| where isnotempty(Account)
-| summarize FailedLogins = count() by Account
-| top 5 by FailedLogins desc
-```
 - I also created a timechart as well that follows a similar format as the Pie Chart
 <img width="1486" height="750" alt="image" src="https://github.com/user-attachments/assets/af60773e-c774-452c-8ad4-ee18e044d4ee" />
 
+- Furthermore, I did create an alert based on the training data that checks for failed login attempts with a threshold of 1000 events.
+<img width="1540" height="935" alt="image" src="https://github.com/user-attachments/assets/12e1a64b-8ed4-4f22-a8e1-d902463229df" /> 
 
 
 
