@@ -47,7 +47,7 @@ SecurityEvent
 | top 5 by FailedLogins desc
 ```
 
-# This query checks for failed login attempts - This query was used to craft the alert
+This query checks for failed login attempts - This query was used to craft the alert
 ```KQL
 SecurityEvent 
 |where EventID == "4625" 
