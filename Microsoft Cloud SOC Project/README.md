@@ -57,7 +57,11 @@
 <img width="1486" height="750" alt="image" src="https://github.com/user-attachments/assets/af60773e-c774-452c-8ad4-ee18e044d4ee" />
 
 - Furthermore, I did create an alert based on the training data that checks for failed login attempts with a threshold of 1000 events.
-<img width="1540" height="935" alt="image" src="https://github.com/user-attachments/assets/12e1a64b-8ed4-4f22-a8e1-d902463229df" /> 
+<img width="1540" height="935" alt="image" src="https://github.com/user-attachments/assets/12e1a64b-8ed4-4f22-a8e1-d902463229df" />
+
+- After some time, we can see that the alert triggered in Microsoft Sentinel's Incidents page.
+<img width="1562" height="815" alt="image" src="https://github.com/user-attachments/assets/61bdc164-c808-4d16-a88d-82647b2b839f" />
+
 
 
 
