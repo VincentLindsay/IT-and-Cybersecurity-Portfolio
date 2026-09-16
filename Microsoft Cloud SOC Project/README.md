@@ -16,7 +16,7 @@
 
 #  1) Provisioning the Lab, and setting up Microsoft Sentinel
 - To begin with this project, I created an account for the Microsoft E5 Trial, and setup Azure.
-- Since I named the company as "Phoenix Labs", with the Azure subscription being "Phoenix-Subscription" I created a Resource Group called **Phoenix-Vincent-RG**
+- I created a resource group for the projects, with a naming convention of Phoenix-Vincent-()
 <img width="1917" height="446" alt="image" src="https://github.com/user-attachments/assets/5c995000-b185-4214-b04c-cc3d3e9d09e6" />
 
 - I then began to deploy a Windows 11 VM within the resource group.
