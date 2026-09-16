@@ -64,6 +64,7 @@
 - After some time, we can see that the alert triggered in Microsoft Sentinel's Incidents page.
 <img width="1562" height="815" alt="image" src="https://github.com/user-attachments/assets/61bdc164-c808-4d16-a88d-82647b2b839f" />
 
+# 2) Creating email security policies using Defender for Office 365
 
 
 
