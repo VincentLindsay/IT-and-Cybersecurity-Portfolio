@@ -1,9 +1,8 @@
 # Overview
-- This project features the operation of a Microsoft-based cloud SOC lab using Sentinel, Defender for Endpoint, Defender for Office 365, and Entra ID.
-  - I will configured and test email security policies (Safe Links, Anti-Phishing) and simulate phishing attacks to validate detections.
-    - Additionally, I will write KQL queries to investigate failed logons, phishing attempts and endpoint alerts.
-   
+- This project is a a Microsoft Azure based SOC lab featuring Microsoft Sentinel, Defender XDR, Defender for Endpoint and Defender for Office 365 across threat detection, hunting, phishing investigation and incident response.
+  - This project also involves the configuration and testing of email security policies (Safe Links, Anti-Phishing) and simulate phishing attacks to validate detection rules.
 
+   
 # Table of Contents
 | Project Section No | Section 1 Name | Section Link | Report link |  
 | :---: | :---: | :---: | :---: |
