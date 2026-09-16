@@ -1,0 +1,16 @@
+# Scoping out entire login events.
+SecurityEvent
+| where EventID == "4625" 
+| sort by TimeGenerated 
+
+# Identifying a correlation of failed account logins with the machines.
+SecurityEvent
+| where EventID == "4625"
+| summarize FailureCount = count() by Computer, Account
+| sort by FailureCount
+| take 5
+
+# Identifying successful logins.
+SecurityEvent
+| where EventID == 4624
+
