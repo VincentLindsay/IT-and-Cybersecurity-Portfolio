@@ -14,12 +14,12 @@
 | Project No. | Project Name | Link |
 | :---: | :---: | :---: |
 | 1    | Malware Analysis Projects | [View Project Folder](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Malware%20Analysis%20Projects) | 
-| 1A   | Static Analysis of Malware | [View Projects](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Malware%20Analysis%20Projects/Static%20Analysis/README.md) |
 | 2 | Splunk Projects | [View Projects](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Splunk%20lab) | 
-| 3 | SOC homelab Project | [View Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/SOC%20homelab%20project) | 
+| 3 | Active Directory-SOC homelab Project | [View Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/SOC%20homelab%20project) | 
 | 4 | Wazuh SIEM Project With SOAR | [View Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Wazuh%20Project) |
 | 5 | Network Traffic Analysis | [View Projects](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Network%20Traffic%20Analysis) | 
-    
+| 6 | Microsoft Cloud based SOC Project | [View Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Microsoft%20Cloud%20SOC%20Project) |   
+
 # Platform lab Write-ups
 | Platform Name | Write-up folder name | Link |
 | :---: | :---: | :---: |
