@@ -1,5 +1,6 @@
 # Overview
 - This section features all KQL queries written in this lab.
+    - For specific queries made in the investigation reports, view the KQL queries [here:](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Microsoft%20Cloud%20SOC%20Project/Project%20Reports)
 
 This query views emails that were allowed to pass into a user's inbox, and contained the subject had the word "Urgent"
 ```KQL
