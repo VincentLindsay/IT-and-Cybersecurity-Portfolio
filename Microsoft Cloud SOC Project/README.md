@@ -5,14 +5,13 @@
    
 
 # Table of Contents
-| Project Section No | Section 1 Name | Link |
-| :---: | :---: | :---: |
-| 1 | Provisioning the Lab, and setting up Microsoft Sentinel | [View Section](#1-Provisioning-the-Lab-and-setting-up-Microsoft-Sentinel) |
+| Project Section No | Section 1 Name | Section Link | Report link |  
+| :---: | :---: | :---: | :---: |
+| 1 | Provisioning the Lab, and setting up Microsoft Sentinel | [View Section](#1-Provisioning-the-Lab-and-setting-up-Microsoft-Sentinel) | View Incident Report |
+| 2 | Creating email security policies using Defender for Office 365 | View Section | View Incident Report | 
+| 3 | Using Defender for Endpoint to create Endpoint security policies | View Section | View Incident Report |
+| 4 | Creating Identity and Access management policies using Entra ID | View Section | View Incident Report |
 
-- [ 1) Provisioning the Lab, and setting up Microsoft Sentinel](#1-Provisioning-the-Lab-and-setting-up-Microsoft-Sentinel)
-- [ 2) Creating email security policies using Defender for Office 365]
-- [ 3) Using Defender for Endpoint to create Endpoint security policies]
-- [ 4) Creating Identity and Access management policies using Entra ID]
 
 
 
