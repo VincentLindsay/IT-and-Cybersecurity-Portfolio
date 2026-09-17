@@ -16,14 +16,14 @@
 # Table of contents 
 | Project Section No | Section Name | Section Link | 
 | :---: | :---: | :---: | 
-| 1 | Deploying Windows server 2019 & Lima Charlie | [View Section](#1-Deploying-Windows-server-2019-&-Lima-Charlie) | 
+| 1 | Deploying Windows server 2019 and Lima Charlie | [View Section](#1-Deploying-Windows-server-2019-and-Lima-Charlie) | 
 | 2 | Generating telemetry from the Windows server | 
 | 3 | Creating a detection rule on Lima Charlie | 
 | 4 | Developing the SOAR workflow using Slack and Tines | 
 | 5 | Creating Automation Playbook within Tines | 
 
 
-# 1) Deploying Windows server 2019 & Lima Charlie  
+# 1) Deploying Windows server 2019 and Lima Charlie  
 - I was able to retrieve an ISO file from Microsoft's evaluation center page.
    - Here is a link: https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019
 
