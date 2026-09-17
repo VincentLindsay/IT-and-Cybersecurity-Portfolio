@@ -64,7 +64,15 @@
 <img width="1562" height="815" alt="image" src="https://github.com/user-attachments/assets/61bdc164-c808-4d16-a88d-82647b2b839f" />
 
 # 2) Creating email security policies using Defender for Office 365
+- To begin, I created two user accounts that will be used to test email security policies.
+<img width="1432" height="230" alt="image" src="https://github.com/user-attachments/assets/d57b682b-a25a-4496-bbd7-c89f24988f26" />
 
+- Once the users were created, I also created the outlook mailboxes for the accounts.
+<img width="1905" height="270" alt="image" src="https://github.com/user-attachments/assets/269bb116-17c4-43a9-b9df-eb9c3cda1257" />
+<img width="1917" height="645" alt="image" src="https://github.com/user-attachments/assets/3c790ccc-6a0c-49d1-a9f8-f6ab336759ab" />
+
+- In Microsoft Defender XDR, we can see the emails for the newly created accounts.
+<img width="1492" height="497" alt="image" src="https://github.com/user-attachments/assets/8a8d2fc4-0dee-4e1b-a231-3cf3a4ec88f7" />
 
 
 
