@@ -74,9 +74,12 @@
 - In Microsoft Defender XDR, we can see the emails for the newly created accounts.
 <img width="1492" height="497" alt="image" src="https://github.com/user-attachments/assets/8a8d2fc4-0dee-4e1b-a231-3cf3a4ec88f7" />
 
+- With the test accounts, I created a safelinks policy using Microsoft Defender XDR
+<img width="1916" height="952" alt="image" src="https://github.com/user-attachments/assets/d0417f63-7fdf-4aa3-9c9d-8d54db70f0e9" />
 
+- Once the policy was created, I sent an email to one of the test accounts to test the policy.
+<img width="1917" height="1002" alt="image" src="https://github.com/user-attachments/assets/ce19bfe4-0ec8-45de-b6a0-33bc718c3580" />
 
-
-
+- We can see that the safelinks policy worked as intended
 
 
