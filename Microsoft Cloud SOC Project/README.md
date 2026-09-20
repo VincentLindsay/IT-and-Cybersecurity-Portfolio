@@ -80,6 +80,18 @@
 - Once the policy was created, I sent an email to one of the test accounts to test the policy.
 <img width="1917" height="1002" alt="image" src="https://github.com/user-attachments/assets/ce19bfe4-0ec8-45de-b6a0-33bc718c3580" />
 
-- We can see that the safelinks policy worked as intended
+- We can see that the safelinks policy worked as intended.
+- Once I created the safelinks policy, I proceeded to create an anti-phishing policy that is domain wide.
 
+These user accounts have impersonation protection enabled.
+  - Michael Scott
+  - Vincent Lindsay (my Global Admin. Account)
+<img width="1917" height="991" alt="image" src="https://github.com/user-attachments/assets/0426346a-94cf-4b1e-b0dd-8777b69c9e18" />
+
+- I also enabled behavior based impersonation protection as well.
+<img width="1397" height="897" alt="image" src="https://github.com/user-attachments/assets/0746704d-e175-4d28-8817-11c0741b71e5" />
+<img width="1917" height="997" alt="image" src="https://github.com/user-attachments/assets/dca4750f-ec6c-43dd-a15a-4d18cb869d9f" />
+
+- With that in mind, the anti-phishing policy was created.
+<img width="1535" height="481" alt="image" src="https://github.com/user-attachments/assets/14937907-3ca9-4573-915a-33a0c691571d" />
 
