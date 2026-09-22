@@ -6,7 +6,7 @@
 # Table of Contents
 | Project Section No | Section Name | Section Link | Report link |  
 | :---: | :---: | :---: | :---: |
-| 1 | Provisioning the Lab, and setting up Microsoft Sentinel | [View section](#1-Provisioning-the-Lab-and-setting-up-Microsoft-Sentinel) | View incident report |
+| 1 | Provisioning the Lab, and setting up Microsoft Sentinel | [View section](#1-Provisioning-the-Lab-and-setting-up-Microsoft-Sentinel) | [View incident report](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Microsoft%20Cloud%20SOC%20Project/Project%20Reports/VLindsay-Brute%20Force%20Activity%20Report.pdf) |
 | 2 | Creating email security policies using Defender for Office 365 | [View section](#2-Creating-email-security-policies-using-Defender-for-Office-365) | View incident report | 
 | 3 | Using Defender for Endpoint to create Endpoint security policies | View section | View incident report |
 | 4 | Creating Identity and Access management policies using Entra ID | View section | View incident report |
