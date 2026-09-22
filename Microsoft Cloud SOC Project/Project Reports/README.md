@@ -7,7 +7,7 @@
 
 | Report No. | Report Name | Link |
 | :---: | :---: | :---: |
-| 1 | Brute Force Analysis | View Report |
+| 1 | Brute Force Analysis | [View Report](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Microsoft%20Cloud%20SOC%20Project/Project%20Reports/VLindsay-Brute%20Force%20Activity%20Report.pdf) |
 
 # Table of KQL queries
 | KQL query list No. | Report Name | Link |
