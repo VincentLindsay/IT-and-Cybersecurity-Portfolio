@@ -19,6 +19,7 @@
 | 4 | Wazuh SIEM Project With SOAR | [View Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Wazuh%20Project) |
 | 5 | Network Traffic Analysis | [View Projects](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Network%20Traffic%20Analysis) | 
 | 6 | Microsoft Cloud based SOC Project | [View Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Microsoft%20Cloud%20SOC%20Project) |   
+| 7 | SOAR + EDR Project | [View Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/SOAR%20%2B%20EDR%20Project) |
 
 # Platform lab Write-ups
 | Platform Name | Write-up folder name | Link |
