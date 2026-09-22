@@ -1,0 +1,62 @@
+# Overview
+- This folder features writeups of KQL based investigations from KC7cyber: https://kc7cyber.com/
+
+- Each writeup will show how I was able to answer questions during the investigations, as well as the queries used to identify malicious activity.
+
+
+# Table of Contents
+- CloutHaus: Social Media leads to Compromise
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
