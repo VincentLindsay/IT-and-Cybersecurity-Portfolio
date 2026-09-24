@@ -95,3 +95,59 @@ These user accounts have impersonation protection enabled.
 - With that in mind, the anti-phishing policy was created.
 <img width="1535" height="481" alt="image" src="https://github.com/user-attachments/assets/14937907-3ca9-4573-915a-33a0c691571d" />
 
+- To test the phishing policies, I sent an email to one of the user accounts with a fake phishing email that contains a link to a webpage.
+<img width="745" height="372" alt="image" src="https://github.com/user-attachments/assets/68d78e2c-7546-466b-b65c-46e10897bcb6" />
+
+- We can also see that the anti-phishing policy worked, giving the user safety tips like the receiving of an email from the sender.
+<img width="1919" height="988" alt="image" src="https://github.com/user-attachments/assets/f093d858-4d14-46df-92ad-05d03ac57541" />
+
+- To mimic phishing, I utilized the phishing campaign service from Microsoft, and the campaign revolves around credential harvesting
+<img width="1592" height="832" alt="image" src="https://github.com/user-attachments/assets/2a703a40-5072-47cd-83d1-e1d9b177407c" />
+
+- In this case, the user views the email, clicks the link, and enters their respective credentials to login.
+<img width="1917" height="952" alt="image" src="https://github.com/user-attachments/assets/215ac6ea-2070-4c1f-998c-910808df8d09" />
+
+- As a result, the user was assigned training.
+<img width="1917" height="1000" alt="image" src="https://github.com/user-attachments/assets/403fe936-26a6-4c2c-bd45-d9e82049f28f" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
