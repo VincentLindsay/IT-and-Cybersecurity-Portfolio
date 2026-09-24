@@ -1,0 +1,22 @@
+# Viewing 10 email events to understand the field names
+EmailEvents
+| take 10 
+
+# Identifying if dschrute received the email
+EmailEvents
+| where Subject == "Salary Change"
+| where RecipientEmailAddress == "dschrute@phoenixlabs30.onmicrosoft.com"
+
+Identifying if mscott received the email
+EmailEvents
+| where Subject == "Salary Change"
+| where RecipientEmailAddress == "mscott@Phoenixlabs30.onmicrosoft.com"
+
+# Viewing 10 most recent click events
+UrlClickEvents
+| take 10 
+
+# Identifying if Dwight clicked on the received email
+UrlClickEvents
+| where AccountUpn == "dschrute@Phoenixlabs30.onmicrosoft.com"
+| where ActionType == "ClickAllowed"
