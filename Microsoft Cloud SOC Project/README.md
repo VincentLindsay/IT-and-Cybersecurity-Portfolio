@@ -110,6 +110,15 @@ These user accounts have impersonation protection enabled.
 - As a result, the user was assigned training.
 <img width="1917" height="1000" alt="image" src="https://github.com/user-attachments/assets/403fe936-26a6-4c2c-bd45-d9e82049f28f" />
 
+- Moving forward, I created a test proton mail account to simulate another phishing attack.
+  - In this case, the user Dwight received an email claiming to be Michael discussing a change in Dwight's compensation.
+  - The email also includes a simulated document containing a link.
+<img width="1605" height="737" alt="image" src="https://github.com/user-attachments/assets/10f22527-1d74-446e-b01c-2937c4443b4e" />
+<img width="1534" height="202" alt="image" src="https://github.com/user-attachments/assets/c46e7262-0150-45c3-817a-1ac9924b52f3" />
+
+- View the reports page to view my report on a simulated phishing email. 
+
+
 
 
 
