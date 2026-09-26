@@ -7,7 +7,7 @@
 | Project Section No | Section Name | Section Link | Report link |  
 | :---: | :---: | :---: | :---: |
 | 1 | Provisioning the Lab, and setting up Microsoft Sentinel | [View section](#1-Provisioning-the-Lab-and-setting-up-Microsoft-Sentinel) | [View incident report](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Microsoft%20Cloud%20SOC%20Project/Project%20Reports/VLindsay-Brute%20Force%20Activity%20Report.pdf) |
-| 2 | Creating email security policies using Defender for Office 365 | [View section](#2-Creating-email-security-policies-using-Defender-for-Office-365) | View incident report | 
+| 2 | Creating email security policies using Defender for Office 365 | [View section](#2-Creating-email-security-policies-using-Defender-for-Office-365) | [View incident report](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/blob/main/Microsoft%20Cloud%20SOC%20Project/Project%20Reports/VL_Phishing_Investigation.pdf) | 
 | 3 | Using Defender for Endpoint to create Endpoint security policies | View section | View incident report |
 | 4 | Creating Identity and Access management policies using Entra ID | View section | View incident report |
 | A | KQL Queries | [View queries](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Microsoft%20Cloud%20SOC%20Project/KQL%20Queries) | [View my reports page](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Microsoft%20Cloud%20SOC%20Project/Project%20Reports) |
