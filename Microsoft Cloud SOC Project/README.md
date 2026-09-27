@@ -129,8 +129,11 @@ These user accounts have impersonation protection enabled.
 <img width="1060" height="147" alt="image" src="https://github.com/user-attachments/assets/fa406e46-bcda-4232-9532-e315af0b0957" />
 <img width="1047" height="146" alt="image" src="https://github.com/user-attachments/assets/5bd3bff0-bce6-4149-b8ec-eb358bb8be5a" />
 
-- I onboarded the Azure VM locally using the PowerShell Script, and download the onboarding package
+- I onboarded the Azure VM locally using the PowerShell Script, and downloaded the onboarding package.
 
+<img width="1527" height="666" alt="image" src="https://github.com/user-attachments/assets/f24dfede-0fe3-44ff-8bad-70e6755a931b" />
+
+- After executing the onboarding program, and the connectiion test PowerShell script, the Windows 11 VM was onboarded onto Microsoft Defender for Endpoint.
 
 
 
