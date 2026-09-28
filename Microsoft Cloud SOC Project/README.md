@@ -134,6 +134,16 @@ These user accounts have impersonation protection enabled.
 <img width="1527" height="666" alt="image" src="https://github.com/user-attachments/assets/f24dfede-0fe3-44ff-8bad-70e6755a931b" />
 
 - After executing the onboarding program, and the connectiion test PowerShell script, the Windows 11 VM was onboarded onto Microsoft Defender for Endpoint.
+  - In addition to onboarding the VM into Microsoft Defender for Endpoint, I also created a device-specific Microsoft Intune policy utilizing the attack surface reduction (ASR) rules.
+  - I enabled features such as the blocking of "Block credential stealing from the Windows local security authority subsystem". 
+<img width="1632" height="942" alt="image" src="https://github.com/user-attachments/assets/5fa9ecec-4496-4ae4-9449-665f2057795d" />
+<img width="1640" height="950" alt="image" src="https://github.com/user-attachments/assets/b854c839-c0a0-48c2-a9f4-89095fbac791" />
+
+
+- I also assigned the VM the newly created Intune ASR policy, as well as Entra ID
+<img width="812" height="772" alt="image" src="https://github.com/user-attachments/assets/b37400a2-2ec6-48d1-9ee3-56e8803d4ca6" />
+
+ 
 
 
 
