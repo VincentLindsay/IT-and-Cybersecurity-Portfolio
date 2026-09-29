@@ -17,7 +17,7 @@
 | Project Section No | Section Name | Section Link | 
 | :---: | :---: | :---: | 
 | 1 | Deploying Windows server 2019 and Lima Charlie | [View Section](#1-Deploying-Windows-server-2019-and-Lima-Charlie) | 
-| 2 | Generating telemetry from the Windows server using LaZagne | [View Section](#2Generating-telemetry-from-the-Windows-server-using-LaZagne) |
+| 2 | Generating telemetry from the Windows server using LaZagne | [View Section](#2-Generating-telemetry-from-the-Windows-server-using-LaZagne) |
 | 3 | Creating a LaZagne detection rule in Lima Charlie | [View Section](#3-Creating-a-LaZagne-detection-rule-on-Lima-Charlie) | 
 | 4 | Developing the SOAR workflow using Slack and Tines | 
 | 5 | Creating Automation Playbook within Tines | 
