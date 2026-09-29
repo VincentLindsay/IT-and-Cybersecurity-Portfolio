@@ -143,9 +143,25 @@ These user accounts have impersonation protection enabled.
 - I also assigned the VM the newly created Intune ASR policy, as well as Entra ID
 <img width="812" height="772" alt="image" src="https://github.com/user-attachments/assets/b37400a2-2ec6-48d1-9ee3-56e8803d4ca6" />
 
- 
+- To further verify that the VM was correctly implemented into MDE, I installed atomic red team into the VM
+<img width="1072" height="300" alt="image" src="https://github.com/user-attachments/assets/ca827892-9ad9-41ff-9616-a4a8a0a47324" />
+<img width="1086" height="80" alt="image" src="https://github.com/user-attachments/assets/71331707-b7eb-4774-a824-2e2a3d721f79" />
 
+- Once Installed, I ran a test of MITRE Technique T1547.001, which refers to "Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder"
+  - In this case, I am emumlating the addition of persistence mechanisms via Windows Registry
+ <img width="1082" height="602" alt="image" src="https://github.com/user-attachments/assets/d879580c-1ccf-4954-8817-8e76d75cad60" />
 
+- Once the test completed, the activity triggered numerous alerts on MDE
+<img width="1480" height="486" alt="image" src="https://github.com/user-attachments/assets/830b1b76-4620-458e-b965-ded4301c2554" />
+
+- I ran another test that utilizes MITRE Technique T1685.005, which refers to the Defense Impairment Technique of Disable or Modify Tools: Clear Windows Event Logs
+<img width="1391" height="667" alt="image" src="https://github.com/user-attachments/assets/9bfc97ba-596c-4a7e-818d-eab11492a656" />
+
+- The test worked, however, MDE treated the activity as Ransomware, and automatically isolated the VM, and contained the account associated with the Ransomware-like behavior
+<img width="1531" height="927" alt="image" src="https://github.com/user-attachments/assets/f7a565bb-0044-4bbb-8c13-35d8bdeb745c" />
+<img width="1536" height="932" alt="image" src="https://github.com/user-attachments/assets/03d7690b-04c4-4a6e-b24d-ff1d82679742" />
+
+- As result, I began to remidate the activity via undoing the automatic endpoint isolation, and containment of the user account - Michael
 
 
 
