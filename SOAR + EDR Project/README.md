@@ -17,8 +17,8 @@
 | Project Section No | Section Name | Section Link | 
 | :---: | :---: | :---: | 
 | 1 | Deploying Windows server 2019 and Lima Charlie | [View Section](#1-Deploying-Windows-server-2019-and-Lima-Charlie) | 
-| 2 | Generating telemetry from the Windows server | 
-| 3 | Creating a detection rule on Lima Charlie | 
+| 2 | Generating telemetry from the Windows server using LaZagne | [View Section](#2Generating-telemetry-from-the-Windows-server-using-LaZagne) |
+| 3 | Creating a LaZagne detection rule in Lima Charlie | [View Section](#3-Creating-a-LaZagne-detection-rule-on-Lima-Charlie) | 
 | 4 | Developing the SOAR workflow using Slack and Tines | 
 | 5 | Creating Automation Playbook within Tines | 
 
@@ -44,12 +44,44 @@
 
 - We can see that the server is successfully displayed on Lima Charlie
 
-# 2) Generating telemetry from the Windows server
+# 2) Generating telemetry from the Windows server using LaZagne
+- Using the LaZagne tool, I simulated a password recovery attack that focuses on credential harvesting.
+- link to the tool: https://github.com/alessandroz/lazagne
+   - Once I downloaded the python executable, I ran the program to verify that it works, and that Lima Charlie can detect the exection of the process from PowerShell
+<img width="851" height="237" alt="image" src="https://github.com/user-attachments/assets/53ce0c93-2b37-4b92-88e8-aecd972e939a" />
+
+- We can see that the process execution was detected on Lima Charlie
+<img width="1452" height="457" alt="image" src="https://github.com/user-attachments/assets/de521a01-f655-422c-a83d-c5777b4e58cb" />
+
+- By looking at the details of the event, we can see evidence such as the File path associated with the process.
+   - In section 3, I created a detection and reponse (D&R) rule to identify LaZagne based credential harvesting attempts. 
+<img width="727" height="641" alt="image" src="https://github.com/user-attachments/assets/2d7dbd64-525e-4bee-95cb-ec2842077ee2" />
+
+# 3) Creating a detection rule on Lima Charlie
+- This section follows section 2, where I simulated credential harvesting using LaZagne.
+   - This section focuses on the creation of a Detection and Response (D&R) rule that focuses on identifying the usage of LaZagne on the Windows server.
+ 
+- To begin with the D&R rule, I first began creating the Detection rule, and the rule detects the following:
+   - The rule detects newly created and existing processes on a Windows machine
+   - The rule also dectects LaZagne usage if the file path ends with LaZagne.exe
+   - The rule will also identify any command line usage associated with Lazagne
+<img width="1765" height="447" alt="image" src="https://github.com/user-attachments/assets/a6a3cb57-9a32-42e3-94be-91b36ed3ca19" />
+
+- On the other hand, the Response rule will tell Lima Charlie to generate a Detection alert. 
+<img width="992" height="351" alt="image" src="https://github.com/user-attachments/assets/3dabcb59-443e-4738-ae06-4b9dfc13cab3" />
+
+- Prior to conducting a live test of the alert, I used an ealrier event to test the alert I created.
+<img width="846" height="740" alt="image" src="https://github.com/user-attachments/assets/46ff3682-5351-4d4b-84d3-f9b0755594c0" />
 
 
+- Once the detection rule was created, I executed LaZagne again to verify that the D&R rule worked as intended
+<img width="1531" height="316" alt="image" src="https://github.com/user-attachments/assets/ea98b15b-8afb-47ce-89e8-4ca754a910cd" />
 
+- We can see that the rule creation was successful.
 
+# 4) Developing the SOAR workflow using Slack and Tines
 
+# 5) Creating an Automation Playbook within Tines
 
 
 
