@@ -18,7 +18,7 @@
 | :---: | :---: | :---: | 
 | 1 | Deploying Windows server 2019 and Lima Charlie | [View Section](#1-Deploying-Windows-server-2019-and-Lima-Charlie) | 
 | 2 | Generating telemetry from the Windows server using LaZagne | [View Section](#2-Generating-telemetry-from-the-Windows-server-using-LaZagne) |
-| 3 | Creating a LaZagne detection rule in Lima Charlie | [View Section](#3-Creating-a-LaZagne-detection-rule-on-Lima-Charlie) | 
+| 3 | Creating a LaZagne detection rule in Lima Charlie | [View Section](#3-Creating-a-LaZagne-detection-rule-in-Lima-Charlie) | 
 | 4 | Developing the SOAR workflow using Slack and Tines | 
 | 5 | Creating Automation Playbook within Tines | 
 
@@ -57,7 +57,7 @@
    - In section 3, I created a detection and reponse (D&R) rule to identify LaZagne based credential harvesting attempts. 
 <img width="727" height="641" alt="image" src="https://github.com/user-attachments/assets/2d7dbd64-525e-4bee-95cb-ec2842077ee2" />
 
-# 3) Creating a detection rule on Lima Charlie
+# 3) Creating a detection rule in Lima Charlie
 - This section follows section 2, where I simulated credential harvesting using LaZagne.
    - This section focuses on the creation of a Detection and Response (D&R) rule that focuses on identifying the usage of LaZagne on the Windows server.
  
