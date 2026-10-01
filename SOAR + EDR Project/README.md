@@ -19,8 +19,8 @@
 | 1 | Deploying Windows server 2019 and Lima Charlie | [View Section](#1-Deploying-Windows-server-2019-and-Lima-Charlie) | 
 | 2 | Generating telemetry from the Windows server using LaZagne | [View Section](#2-Generating-telemetry-from-the-Windows-server-using-LaZagne) |
 | 3 | Creating a LaZagne detection rule in Lima Charlie | [View Section](#3-Creating-a-LaZagne-detection-rule-in-Lima-Charlie) | 
-| 4 | Developing the SOAR workflow using Slack and Tines | 
-| 5 | Creating Automation Playbook within Tines | 
+| 4 | Developing the SOAR workflow using Slack and Tines | [View Section](#4-Developing-the-SOAR-workflow-using-Slack-and-Tines) |
+| 5 | Creating the Automation Playbook within Tines and Slack | [View Section](#5-Creating-the-Automation-Playbook-within-Tines-and-Slack) |
 
 
 # 1) Deploying Windows server 2019 and Lima Charlie  
@@ -80,8 +80,21 @@
 - We can see that the rule creation was successful.
 
 # 4) Developing the SOAR workflow using Slack and Tines
+- In my [Wazuh Project](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Wazuh%20Project), I used Slack and Tines in a similar manner.
+   - Since I have a Slack workspace already created, I made a chat channel dedicated to this project: SOAR + EDR
+<img width="1911" height="757" alt="image" src="https://github.com/user-attachments/assets/e3f5667d-46bd-42d3-8d58-e528f89cc109" />
 
-# 5) Creating an Automation Playbook within Tines
+ - Once I created the Slack Channel, I began to create the SOAR playbook within Tines.
+    - To fully configure the Webhook, I configured the output stream in Lima Charlie, that outputs the detection alerts from Lima Charlie into Tines
+<img width="1872" height="582" alt="image" src="https://github.com/user-attachments/assets/b4fe9d34-ca6a-4a7d-9969-3a6b9bfbb662" />
+- The output was created, but to test the configurations, I executed the LaZagne program again to test the output.
+<img width="1166" height="905" alt="image" src="https://github.com/user-attachments/assets/26338cd1-d253-4dcd-ad84-38f7a1795dd3" />
+
+- The Alert was successfully transferred into Tines.
+- Now that the webhook was successfully configured, I began to configure the Automation Playbook in Tines and Slack.
+
+
+# 5) Creating the Automation Playbook within Tines and Slack
 
 
 
