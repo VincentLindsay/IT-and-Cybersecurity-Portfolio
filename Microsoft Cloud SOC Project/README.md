@@ -163,7 +163,10 @@ These user accounts have impersonation protection enabled.
 
 - As result, I began to remidate the activity via undoing the automatic endpoint isolation, and containment of the user account - Michael
 
+# 4) Creating Identity and Access management policies using Entra ID
+- This section features the creation of several IAM policies such as a conditional access policy
 
+- This conditional access policy will only allow sign ins from the domain, and will block any sign in from outside IP addreeses
 
 
 
