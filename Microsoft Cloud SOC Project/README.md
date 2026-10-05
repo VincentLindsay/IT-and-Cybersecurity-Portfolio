@@ -168,6 +168,28 @@ These user accounts have impersonation protection enabled.
 
 - This conditional access policy will only allow sign ins from the domain, and will block any sign in from outside IP addreeses
 
+- In this case, I replicated normal sign in behavior as well as risky sign-ins from Singapore using a VPS geolocated in Singpore
+
+<img width="1022" height="480" alt="image" src="https://github.com/user-attachments/assets/0c545f82-c309-40c3-9c16-96a61fcee455" />
+
+- Although the location is displayed as Japan (JP), the IPv6 address matches the IP address in the VPS.
+<img width="1917" height="476" alt="image" src="https://github.com/user-attachments/assets/14becf10-3589-4e7c-945b-0d1aa9bc5401" />
+
+- As a result, the user account had a risky sign in.
+<img width="1917" height="477" alt="image" src="https://github.com/user-attachments/assets/c8d487f9-2b04-4622-9c28-4be2aaafa424" />
+
+- I created a country blocklist based on the IP address.
+<img width="1917" height="517" alt="image" src="https://github.com/user-attachments/assets/cbb809d9-6324-4341-82d0-fcd36093a678" />
+
+- I then created the Conditional Access Policy that blocks access from the country blocklist
+<img width="1917" height="712" alt="image" src="https://github.com/user-attachments/assets/8177b303-befc-415c-b3c8-b9c737ae17ce" />
+
+- After testing the policy, we can see that the policy was successfully configured
+<img width="1517" height="837" alt="image" src="https://github.com/user-attachments/assets/1b36c9a0-64ec-44ed-b4e3-55253d419794" />
+<img width="1067" height="890" alt="image" src="https://github.com/user-attachments/assets/fc2a7205-1430-4388-89b9-b0c2f96f9a7f" />
+
+
+
 
 
 
