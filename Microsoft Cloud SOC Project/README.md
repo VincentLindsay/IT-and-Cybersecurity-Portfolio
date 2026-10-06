@@ -188,7 +188,13 @@ These user accounts have impersonation protection enabled.
 <img width="1517" height="837" alt="image" src="https://github.com/user-attachments/assets/1b36c9a0-64ec-44ed-b4e3-55253d419794" />
 <img width="1067" height="890" alt="image" src="https://github.com/user-attachments/assets/fc2a7205-1430-4388-89b9-b0c2f96f9a7f" />
 
+- To unify all log sources within Microsoft Sentinel, I added the Entra ID data connector to Sentinel.
+  - I installed the Entra ID workspace into Sentinel, and configured the data connector to Ingest the Sign-in and Audit logs. 
+<img width="1917" height="997" alt="image" src="https://github.com/user-attachments/assets/c2ef9d93-54a0-4f3c-bc7c-c5c0bc7f4aad" />
+<img width="1917" height="947" alt="image" src="https://github.com/user-attachments/assets/5e2953b1-ea63-4c23-8c53-17e068f2b4ac" />
 
+- I then tested the log ingested by signing into one of the test accounts, and queried the login event.
+<img width="1217" height="822" alt="image" src="https://github.com/user-attachments/assets/e8357b07-38a2-4b93-a657-cb00295a8a7a" />
 
 
 
