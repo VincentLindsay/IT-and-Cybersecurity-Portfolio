@@ -1,0 +1,15 @@
+
+# Checking if Powershell was used by an account on the VM
+DeviceProcessEvents
+| where InitiatingProcessSessionId == 2
+| project TimeGenerated, DeviceName, AccountName, FileName, InitiatingProcessFileName, ProcessCommandLine
+| where FileName contains "cmd"
+| where InitiatingProcessFileName contains "powershell"
+
+# Checking if Powershell was used to tamper with Windows Defender
+DeviceProcessEvents
+| where InitiatingProcessFileName == "powershell.exe"
+| where ProcessCommandLine contains "Set-MpPreference"
+| project TimeGenerated, DeviceName, AccountName, FileName, InitiatingProcessFileName, ProcessCommandLine
+
+
