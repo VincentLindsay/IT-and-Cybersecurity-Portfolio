@@ -176,7 +176,8 @@ These user accounts have impersonation protection enabled.
 <img width="1917" height="476" alt="image" src="https://github.com/user-attachments/assets/14becf10-3589-4e7c-945b-0d1aa9bc5401" />
 
 - As a result, the user account had a risky sign in.
-<img width="1917" height="477" alt="image" src="https://github.com/user-attachments/assets/c8d487f9-2b04-4622-9c28-4be2aaafa424" />
+<img width="1917" height="1002" alt="image" src="https://github.com/user-attachments/assets/3d17cc63-6437-443a-b880-6387f950db3e" />
+
 
 - I created a country blocklist based on the IP address.
 <img width="1917" height="517" alt="image" src="https://github.com/user-attachments/assets/cbb809d9-6324-4341-82d0-fcd36093a678" />
