@@ -1,5 +1,5 @@
 # Overview
-- This section features all KQL queries written in this lab.
+- This section features all KQL queries written in this lab, except queries made in the reports
     - For specific queries made in the investigation reports, view the KQL queries [here:](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Microsoft%20Cloud%20SOC%20Project/Project%20Reports)
 
 This query views emails that were allowed to pass into a user's inbox, and contained the subject had the word "Urgent"
@@ -56,6 +56,23 @@ SecurityEvent
 |where FailedLogons >= 1000
 ```
 
+Checking for powershell scripts that affect Windows defender.
+```KQLDeviceProcessEvents
+| where InitiatingProcessFileName =~ "powershell.exe"
+| where ProcessCommandLine contains "Set-MpPreference"
+| project DeviceName, RemoteIP, InitiatingProcessAccount, InitiatingProcessFileName, InitiatingProcessCommandLine
+```
+
+```KQL
+Checking for signin events correlating with the user account Michael
+SigninLogs
+| where Identity contains "Michael"
+```
+```KQL
+Viewing Audit logs to verify that Conditional Access Policy was changed
+AuditLogs
+| take 10
+```
 
 
 
