@@ -197,7 +197,14 @@ These user accounts have impersonation protection enabled.
 - I then tested the log ingested by signing into one of the test accounts, and queried the login event.
 <img width="1217" height="822" alt="image" src="https://github.com/user-attachments/assets/e8357b07-38a2-4b93-a657-cb00295a8a7a" />
 
-- Once the log fields were ingested, I investigated a full-scale incident involving email, identity, and endpoint based compromises.
+- I also verified that the Audit logs were also ingested using KQL
+<img width="1917" height="937" alt="image" src="https://github.com/user-attachments/assets/ddf6e941-828f-46b7-851b-5393947e1dd3" />
+
+
+- Once the log fields were ingested, I investigated a full-scale incident involving a suspicious email leading towards identity, and endpoint compromise.
+<img width="1136" height="707" alt="image" src="https://github.com/user-attachments/assets/f74c8143-ab55-4239-a581-f9d7074d05d9" />
+
+- To read the full report, check out the project reports [section:](https://github.com/VincentLindsay/IT-and-Cybersecurity-Portfolio/tree/main/Microsoft%20Cloud%20SOC%20Project/Project%20Reports)
 
 
 
