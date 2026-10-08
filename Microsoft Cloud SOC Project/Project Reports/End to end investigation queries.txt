@@ -1,0 +1,25 @@
+EmailEvents
+| where RecipientEmailAddress == "mscott@phoenixlabs30.onmicrosoft.com"
+
+UrlClickEvents
+| where ActionType == "ClickAllowed"
+| where AccountUpn == "mscott@phoenixlabs30.onmicrosoft.com"
+
+SigninLogs
+| where Identity =~ "Michael Scott"
+| where ResultSignature =~ "success"
+| project TimeGenerated, ResultSignature, UserDisplayName, Location, IPAddress, ResourceDisplayName
+
+DeviceLogonEvents
+| where ActionType == "LogonSuccess"
+| where LogonType == "RemoteInteractive"
+
+DeviceFileEvents
+| where ActionType == "FileCreated"
+| where FileName contains "mimi"
+
+
+DeviceProcessEvents
+| where FileName contains "mimikatz"
+    or ProcessCommandLine contains "mimikatz"
+| project Timestamp, DeviceName, AccountName, FileName, ProcessCommandLine, InitiatingProcessFileName
