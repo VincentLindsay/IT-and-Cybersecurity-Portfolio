@@ -56,11 +56,20 @@ SecurityEvent
 |where FailedLogons >= 1000
 ```
 
-Checking for powershell scripts that affect Windows defender.
-```KQLDeviceProcessEvents
-| where InitiatingProcessFileName =~ "powershell.exe"
+Checking if Powershell was used by an account on the VM
+```KQL
+DeviceProcessEvents
+| where InitiatingProcessSessionId == 2
+| project TimeGenerated, DeviceName, AccountName, FileName, InitiatingProcessFileName, ProcessCommandLine
+| where FileName contains "cmd"
+| where InitiatingProcessFileName contains "powershell"
+```
+Checking if Powershell was used to tamper with Windows Defender
+```KQL
+DeviceProcessEvents
+| where InitiatingProcessFileName == "powershell.exe"
 | where ProcessCommandLine contains "Set-MpPreference"
-| project DeviceName, RemoteIP, InitiatingProcessAccount, InitiatingProcessFileName, InitiatingProcessCommandLine
+| project TimeGenerated, DeviceName, AccountName, FileName, InitiatingProcessFileName, ProcessCommandLine
 ```
 
 ```KQL
