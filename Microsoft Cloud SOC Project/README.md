@@ -197,7 +197,7 @@ These user accounts have impersonation protection enabled.
 - I then tested the log ingested by signing into one of the test accounts, and queried the login event.
 <img width="1217" height="822" alt="image" src="https://github.com/user-attachments/assets/e8357b07-38a2-4b93-a657-cb00295a8a7a" />
 
-
+- Once the log fields were ingested, I investigated a full-scale incident involving email, identity, and endpoint based compromises.
 
 
 
